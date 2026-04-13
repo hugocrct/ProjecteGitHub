@@ -1,42 +1,247 @@
-# Projecte Web i GitHub
+# 🎮 Joc de Preguntes
 
 ## Descripció
-L'objectiu d'aquesta activitat és que els alumnes posin en pràctica els seus coneixements d'HTML i CSS per crear una pàgina web d'un joc de preguntes tipus trivial. El projecte integra el control de versions i la gestió de repositoris a GitHub, així com la introducció a metodologies àgils com Scrum o Kanban.
 
-## Funcionalitats del Joc
-* **Pantalla de Benvinguda**: Mostra una pantalla de benvinguda i demana el nom de l'usuari per començar a jugar.
-* **Selecció de Categories**: Permet triar entre diferents tipus de preguntes (per exemple, esports o menjar).
-* **Dinàmica de Joc**: Les preguntes es presenten amb alternatives de resposta; l'usuari respon i es mostren les preguntes de forma seqüencial.
-* **Temporitzador**: Inclou un compte enrere amb un límit de temps per respondre a cada pregunta.
-* **Pantalla de Resultats**: Mostra les respostes correctes i ofereix botons per tornar a jugar o sortir.
+Joc de preguntes interactive amb sistema de puntuació, timer per pregunta i categories seleccionables.
+Implementat en HTML5, CSS3 i JavaScript vanilla (sense frameworks).
 
-## Eines Addicionals
-* **Calculadora i Conversor**: Desenvolupament de la funcionalitat d'una calculadora i un conversor de divises utilitzant JavaScript o altres sistemes.
-* **Disseny Responsive**: Assegurar que la pàgina sigui adaptable a diferents mides de pantalla i dispositius.
-* **Interfície d'Usuari (UI/UX)**: Aplicació d'un disseny intuïtiu, consistència visual, llegibilitat i flux de treball lògic.
-
-## Especificacions Tècniques i Metodologia
-* **Tecnologies**: Consolidació de coneixements en HTML (semàntica i selectors), CSS i JavaScript (condicionals, funcions i variables).
-* **Gestió de Git**: Ús de comandes com git init, git clone, git add, git commit, git push i git pull.
-* **Estructura de Branques**: Ús de branches per aïllar funcionalitats, incloent-hi una branca per desenvolupador, una de test principal i la branca principal (main).
-* **Versionat**: Marcació del sistema mitjançant TAGs amb un mínim de 3 versions (ex. v1.3).
-* **Metodologies Àgils**: Organització del treball en sprints i ús de taulers Kanban i "issues" per gestionar tasques i errors.
-
-## Organització i Rols
-* **Equips**: Treball en equips de tres persones per fomentar la col·laboració efectiva.
-* **Rols Definits**: Assignació de rols com desenvolupador frontend, dissenyador d'interfície (UI) i responsable de control de versions.
-* **Revisions**: Sessions setmanals per proporcionar retroalimentació sobre el disseny, funcionalitat i l'ús de GitHub.
-
-## Criteris d'Avaluació
-* **Ús de GitHub (40%)**: Freqüència i qualitat dels commits, gestió de branques i resolució de conflictes.
-* **Qualitat del Codi (10%)**: Estructura semàntica de l'HTML i eficiència en l'organització del CSS.
-* **Funcionalitat (10%)**: Precisió i robustesa de la calculadora i el conversor de divises.
-* **Disseny i UX (10%)**: Adaptabilitat a dispositius i facilitat de navegació.
-* **Col·laboració (10%)**: Comunicació efectiva i participació equitativa dels membres de l'equip.
-* **Avaluació de Seguiment (20%)**: Anàlisi de milestones, gestió del temps i documentació generada.
+**Projecte:** CFGS DAM - M010 UF1 Projecte Web & GitHub  
+**Data:** Abril 2026  
+**Equip:** Anastasia, Hugo C., Paula
 
 ---
 
-**Curs**: CFGS DAM  
-**Matèria**: M010 UF1 Projecte Web & GitHub  
-**Professor**: Blai Redondo
+## 📋 Requisits del Joc
+
+### Features
+- ✅ Pantalla d'inici amb entrada de nom
+- ✅ Selecció de categoria (Historia / Esport)
+- ✅ Preguntes amb 4 opcions de resposta
+- ✅ Feedback visual (correcta/incorrecta)
+- ✅ Sistema de puntuació (10 punts per pregunta correcta)
+- ✅ Timer de compte enrere (30 segons per pregunta)
+- ✅ Indicador de progrés (X de N preguntes)
+- ✅ Pantalla de resultats amb estadístiques
+- ✅ Opció de tornar a jugar
+- ✅ Design responsiu (mobile + desktop)
+
+### Categories
+1. **Historia** 📜 - Preguntes sobre historia universal i de Catalunya
+2. **Esport** ⚽ - Preguntes sobre esports diversos
+
+---
+
+## 🎯 Flux del Joc
+
+```
+1. Pantalla d'inici
+   ↓
+2. Entrada de nom del jugador
+   ↓
+3. Selecció de categoria
+   ↓
+4. Joc de preguntes (amb timer)
+   ↓
+5. Pantalla de resultats
+   ↓
+6. Opció de tornar a jugar o sortir
+```
+
+---
+
+## 📁 Estructura del Projecte
+
+```
+joc-preguntes/
+├── index.html           # HTML semàntic de les 3 pantalles
+├── style.css            # CSS responsiu amb variables
+├── script.js            # JavaScript amb lógica del joc
+├── data/
+│   └── questions.json   # Preguntes en format JSON
+├── img/                 # (futur) imatges i icones
+├── docs/
+│   ├── mockup.html      # Mockup visual interactiu
+│   └── wireframes/      # (futur) wireframes del projecte
+├── README.md            # Aquesta documentació
+├── .gitignore           # Fitxers a ignorar en Git
+└── .git/                # Repositori Git
+```
+
+---
+
+## 🚀 Com Jugar
+
+1. **Entra el teu nom** a la pantalla inicial
+2. **Selecciona una categoria** (Historia o Esport)
+3. **Respon cada pregunta** dins del temps límit (30 segons)
+4. **Veu el feedback** si encertes o no
+5. **Passa a la següent pregunta** amb el botó
+6. **Veu els resultats finals** amb la puntuació total
+
+---
+
+## 👥 Distribució de Rols i Responsabilitats
+
+### Paula - UI/Design & HTML/CSS
+- Wireframes del projecte ✅
+- Estructura HTML semàntica ✅
+- CSS responsiu i modern ✅
+- Estil visual (colors, tipografia, animacions)
+- Testing responsive
+
+### Hugo - Backend & Lógica JavaScript
+- Estructura questions.json ✅
+- Lógica de categories
+- Lógica de puntuació
+- Sistema de timer
+- Funcions de validació
+
+### Anastasia - Frontend & Integració
+- Event listeners principals ✅
+- Navegació entre pantalles
+- Integració HTML + CSS + JS
+- Dinàmica de entrada de nom
+- Dinàmica de selecció de categoria
+
+---
+
+## 💻 Com Desenvolupar Localment
+
+### Requisits
+- Un navegador web (Chrome, Firefox, Safari, Edge)
+- Git instalat
+- VSCode o editor de text
+
+### Setup
+1. Clona el repositori:
+   ```bash
+   git clone https://github.com/[username]/joc-preguntes.git
+   cd joc-preguntes
+   ```
+
+2. Obri el projecte en VSCode:
+   ```bash
+   code .
+   ```
+
+3. Obre `index.html` en el navegador:
+   - Opció 1: Doble clic al fitxer `index.html`
+   - Opció 2: Usa Live Server extension (clic dret > Open with Live Server)
+
+### Git Workflow
+```bash
+# Crea la teva branca de feature
+git checkout -b feature/nom-funcionalitat
+
+# Fes els canvis i comprova-los localment
+
+# Fes commit dels canvis
+git add .
+git commit -m "[FEATURE] descripció clara en 50 caràcters"
+
+# Puja la branca
+git push -u origin feature/nom-funcionalitat
+
+# Crea un Pull Request a GitHub
+# Espera la revisió i merge a develop
+```
+
+---
+
+## 🔄 Convencions de Git
+
+### Tipos de Commits
+```
+[FEATURE] - Nova funcionalitat
+[BUGFIX]  - Correcció de bugs
+[REFACTOR] - Millora de codi existente
+[DOCS]    - Documentació
+[STYLE]   - Canvis d'estil CSS
+```
+
+### Exemplo
+```
+[FEATURE] Afegir timer de pregunta
+[BUGFIX] Corregir validació de nom
+[STYLE] Ajustar padding de botones
+```
+
+---
+
+## 📊 Deadlines del Projecte
+
+| Data | Entrega | Estat |
+|------|---------|-------|
+| 13 abr | 1ª Entrega | ✅ Base estructura |
+| 20 abr | 2ª Entrega | 🔄 Funcionalitat completa |
+| 27 abr | 3ª Entrega | ⏳ Poliment |
+| 30 abr | Final | ⏳ Entrega definitiva |
+
+---
+
+## 📝 Notes d'Implementació
+
+### HTML
+- Estructura semàntica amb `<section>` per cada pantalla
+- IDs úniques per a cada element funcional
+- Classes per estil reutilitzable
+- Accessible (labels, alt text, etc.)
+
+### CSS
+- Variables CSS per colors i espaçament
+- Mobile-first responsive design
+- Transicions suaus (0.3s ease)
+- Gradient de colors (6366f1 a 764ba2)
+
+### JavaScript
+- OOP amb objecte `estadoJuego` per estat
+- Funcions modulars (una per responsabilitat)
+- Comments explicatius
+- Console.log per debugging
+
+### questions.json
+- Estructura clara amb categories
+- Cada pregunta té id, pregunta, opcions, correcta, explicacio
+- Fàcil d'expandir amb més preguntes
+
+---
+
+## 🎨 Paleta de Colors
+
+- **Primary:** `#6366f1` (Indigo modern)
+- **Secondary:** `#ec4899` (Pink accent)
+- **Success:** `#10b981` (Green)
+- **Danger:** `#ef4444` (Red)
+- **Dark:** `#1f2937` (Dark gray)
+- **Light:** `#f9fafb` (Light gray)
+
+---
+
+## 🌐 Navegadors Suportats
+
+- ✅ Chrome/Chromium (v90+)
+- ✅ Firefox (v88+)
+- ✅ Safari (v14+)
+- ✅ Edge (v90+)
+
+---
+
+## 🔗 Links Útils
+
+- [Documentació de Git](https://git-scm.com/doc)
+- [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [CSS-Tricks](https://css-tricks.com/)
+- [GitHub Guides](https://guides.github.com/)
+
+---
+
+## 📞 Contacte
+
+- **Anastasia:** Frontend & Integració
+- **Hugo:** Backend & Lógica
+- **Paula:** UI/Design & HTML/CSS
+
+---
+
+**Última actualització:** 13 d'abril de 2026  
+**Status:** 🟡 En desenvolupament (Primera entrega)
