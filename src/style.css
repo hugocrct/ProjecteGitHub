@@ -1,0 +1,92 @@
+/* Importamos una fuente moderna similar a la de la imagen */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Degradado de fondo según la imagen */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.pBenvolguda {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+/* Simulación del icono del mando de juego */
+.pBenvolguda::before {
+    content: '🎮';
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #6366f1; /* Color azul/púrpura del título */
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.subTitol {
+    color: #6b7280; /* Gris para el texto descriptivo */
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #4f46e5;
+}
+
+/* Añadir la flecha al final del texto del botón como en la imagen */
+button::after {
+    content: ' →';
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+/* Estilos extra para las etiquetas de selección */
+.seleccioQuiz {
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+}
