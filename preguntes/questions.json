@@ -1,0 +1,134 @@
+{
+  "categories": {
+    "historia": {
+      "name": "Historia",
+      "questions": [
+        {
+          "id": 1,
+          "pregunta": "En quin any va acabar la Guerra Civil Espanyola?",
+          "opcions": [
+            "1936",
+            "1938",
+            "1939",
+            "1941"
+          ],
+          "correcta": 2,
+          "explicacio": "La Guerra Civil va acabar el 1939 amb la victòria franquista"
+        },
+        {
+          "id": 2,
+          "pregunta": "Quina fou la primera capital de Catalunya?",
+          "opcions": [
+            "Barcelona",
+            "Manresa",
+            "Lleida",
+            "Girona"
+          ],
+          "correcta": 2,
+          "explicacio": "Lleida fou primera capital com a centre dels Comtes de Cataluya"
+        },
+        {
+          "id": 3,
+          "pregunta": "En quin any va caure l'Imperi Romà d'Occident?",
+          "opcions": [
+            "395 dC",
+            "476 dC",
+            "600 dC",
+            "800 dC"
+          ],
+          "correcta": 1,
+          "explicacio": "L'Imperi Romà d'Occident va caure el 476 dC quan es va deposar l'últim emperador"
+        },
+        {
+          "id": 4,
+          "pregunta": "Quin filòsof va dir 'Pens, luego existo'?",
+          "opcions": [
+            "Platò",
+            "Aristòtil",
+            "René Descartes",
+            "Immanuel Kant"
+          ],
+          "correcta": 2,
+          "explicacio": "René Descartes va formular aquesta famosa frase del pensament occidental"
+        },
+        {
+          "id": 5,
+          "pregunta": "En quin any va caure el Mur de Berlín?",
+          "opcions": [
+            "1987",
+            "1988",
+            "1989",
+            "1990"
+          ],
+          "correcta": 2,
+          "explicacio": "El Mur de Berlín va caure el 9 de novembre de 1989"
+        }
+      ]
+    },
+    "esport": {
+      "name": "Esport",
+      "questions": [
+        {
+          "id": 1,
+          "pregunta": "Quants jugadors hi ha en un equip de futbol a la gespa?",
+          "opcions": [
+            "9 jugadors",
+            "10 jugadors",
+            "11 jugadors",
+            "12 jugadors"
+          ],
+          "correcta": 2,
+          "explicacio": "Un equip de futbol té 11 jugadors en total a la gespa"
+        },
+        {
+          "id": 2,
+          "pregunta": "En quin país es van jugar les Olimpiades 2020?",
+          "opcions": [
+            "Japó",
+            "Corea del Sud",
+            "China",
+            "Tailàndia"
+          ],
+          "correcta": 0,
+          "explicacio": "Es van jugar a Tòquio, Japó en 2021 (covid delay)"
+        },
+        {
+          "id": 3,
+          "pregunta": "Quantes goles té Rafa Nadal de Grand Slam?",
+          "opcions": [
+            "12 Grand Slams",
+            "14 Grand Slams",
+            "16 Grand Slams",
+            "18 Grand Slams"
+          ],
+          "correcta": 3,
+          "explicacio": "Rafa Nadal ha guanyat 22 Grand Slams fins a la data"
+        },
+        {
+          "id": 4,
+          "pregunta": "Quines són les dues seleccions que més Campionats del Món han guanyat en futbol?",
+          "opcions": [
+            "Brasil i Francia",
+            "Alemanya i Brasil",
+            "Brasil i Anglaterra",
+            "Alemanya i Italia"
+          ],
+          "correcta": 1,
+          "explicacio": "Brasil i Alemanya han guanyat 5 Mundials cadascuna"
+        },
+        {
+          "id": 5,
+          "pregunta": "En quants minuts es divideix un partit de futbol?",
+          "opcions": [
+            "2 temps de 40 minuts",
+            "2 temps de 45 minuts",
+            "2 temps de 50 minuts",
+            "2 temps de 60 minuts"
+          ],
+          "correcta": 1,
+          "explicacio": "Un partit de futbol té 2 temps de 45 minuts cadascun"
+        }
+      ]
+    }
+  }
+}
