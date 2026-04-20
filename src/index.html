@@ -1,19 +1,103 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joc de preguntes</title>
+    <title>Joc de Preguntes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="pBenvolguda">
-        <h1>
-            Benvolgut al quiz definitiu!
-        </h1>
-        <h2 class="subTitol">Pots escollir entre esports i/o historia!</h2>
-        <a href="" target="_blank"><button class="botoHistoria">Historia</button></a>
-        <a href="" target="_blank"><button class="botoEsports">Esports</button></a>
-    </div>
+
+    <!-- PANTALLA 1: Benvinguda + nom -->
+    <section id="pantallaBenvinguda" class="pantalla activa">
+        <div class="targeta">
+            <span class="icon">🎮</span>
+            <h1>Joc de Preguntes</h1>
+            <p class="subTitol">Posa a prova els teus coneixements!</p>
+
+            <div class="grupFormulari">
+                <label for="inputNom" class="etiqueta">El teu nom</label>
+                <input 
+                    type="text" 
+                    id="inputNom" 
+                    class="inputNom" 
+                    placeholder="Escriu el teu nom..."
+                    maxlength="20"
+                >
+                <p class="errorNom amagat" id="errorNom">⚠️ Entra un nom vàlid</p>
+            </div>
+
+            <button class="boto boto--primari" id="botoComençar">
+                Començar
+            </button>
+        </div>
+    </section>
+
+    <!-- PANTALLA 2: Selecció de categoria -->
+    <section id="pantallaCategories" class="pantalla amagada">
+        <div class="targeta">
+            <span class="icon">📚</span>
+            <h2>Hola, <span id="nomJugador"></span>!</h2>
+            <p class="subTitol">Escull una categoria</p>
+
+            <div class="gridCategories">
+                <button class="boto boto--categoria" data-categoria="historia">
+                    <span class="categoriaIcon">📜</span>
+                    <span class="categoriaNom">Història</span>
+                    <span class="categoriaDesc">10 preguntes</span>
+                </button>
+                <button class="boto boto--categoria" data-categoria="esport">
+                    <span class="categoriaIcon">⚽</span>
+                    <span class="categoriaNom">Esport</span>
+                    <span class="categoriaDesc">10 preguntes</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PANTALLA 3: Joc (TODO: Hugo implementa timer i lògica) -->
+    <section id="pantallaJoc" class="pantalla amagada">
+        <div class="targeta targeta--joc">
+
+            <!-- Capçalera del joc -->
+            <div class="jocCapcalera">
+                <span class="jocCategoria" id="jocCategoria">Història</span>
+                <div class="timer" id="timer">
+                    <span class="timerNumero" id="timerNumero">30</span>s
+                </div>
+            </div>
+
+            <!-- Barra de progrés -->
+            <div class="barraProgres">
+                <div class="barraProgresInner" id="barraProgresInner"></div>
+            </div>
+            <p class="progresText" id="progresText">Pregunta 1 de 10</p>
+
+            <!-- Pregunta -->
+            <p class="pregunta" id="textPregunta">La pregunta apareixerà aquí</p>
+
+            <!-- Opcions (TODO: Anastasia connecta amb JS) -->
+            <div class="gridOpcions" id="gridOpcions">
+                <button class="boto boto--opcio" data-index="0">Opció A</button>
+                <button class="boto boto--opcio" data-index="1">Opció B</button>
+                <button class="boto boto--opcio" data-index="2">Opció C</button>
+                <button class="boto boto--opcio" data-index="3">Opció D</button>
+            </div>
+
+            <!-- Feedback (amagat fins resposta) -->
+            <div class="feedback amagat" id="feedback">
+                <p id="feedbackText"></p>
+                <button class="boto boto--primari" id="botoSeguent">Següent →</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PANTALLA 4: Resultats (TODO) -->
+    <section id="pantallaResultats" class="pantalla amagada">
+        <!-- pendent -->
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
