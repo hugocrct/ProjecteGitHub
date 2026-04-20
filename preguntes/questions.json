@@ -1,133 +1,79 @@
 {
   "categories": {
     "historia": {
-      "name": "Historia",
+      "name": "Història",
       "questions": [
-        {
-          "id": 1,
-          "pregunta": "En quin any va acabar la Guerra Civil Espanyola?",
-          "opcions": [
-            "1936",
-            "1938",
-            "1939",
-            "1941"
-          ],
-          "correcta": 2,
-          "explicacio": "La Guerra Civil va acabar el 1939 amb la victòria franquista"
-        },
-        {
-          "id": 2,
-          "pregunta": "Quina fou la primera capital de Catalunya?",
-          "opcions": [
-            "Barcelona",
-            "Manresa",
-            "Lleida",
-            "Girona"
-          ],
-          "correcta": 2,
-          "explicacio": "Lleida fou primera capital com a centre dels Comtes de Cataluya"
-        },
-        {
-          "id": 3,
-          "pregunta": "En quin any va caure l'Imperi Romà d'Occident?",
-          "opcions": [
-            "395 dC",
-            "476 dC",
-            "600 dC",
-            "800 dC"
-          ],
-          "correcta": 1,
-          "explicacio": "L'Imperi Romà d'Occident va caure el 476 dC quan es va deposar l'últim emperador"
-        },
-        {
-          "id": 4,
-          "pregunta": "Quin filòsof va dir 'Pens, luego existo'?",
-          "opcions": [
-            "Platò",
-            "Aristòtil",
-            "René Descartes",
-            "Immanuel Kant"
-          ],
-          "correcta": 2,
-          "explicacio": "René Descartes va formular aquesta famosa frase del pensament occidental"
-        },
-        {
-          "id": 5,
-          "pregunta": "En quin any va caure el Mur de Berlín?",
-          "opcions": [
-            "1987",
-            "1988",
-            "1989",
-            "1990"
-          ],
-          "correcta": 2,
-          "explicacio": "El Mur de Berlín va caure el 9 de novembre de 1989"
-        }
+        { "id": 1, "pregunta": "En quin any va acabar la Guerra Civil Espanyola?", "opcions": ["1936", "1938", "1939", "1941"], "correcta": 2, "explicacio": "La Guerra Civil va acabar el 1939 amb la victòria franquista." },
+        { "id": 2, "pregunta": "Quina fou la primera capital de Catalunya?", "opcions": ["Barcelona", "Manresa", "Lleida", "Girona"], "correcta": 2, "explicacio": "Lleida fou primera capital com a centre dels Comtes de Catalunya." },
+        { "id": 3, "pregunta": "En quin any va caure l'Imperi Romà d'Occident?", "opcions": ["395 dC", "476 dC", "600 dC", "800 dC"], "correcta": 1, "explicacio": "Va caure el 476 dC quan el cap germànic Odoacre va deposar Ròmul Augústul." },
+        { "id": 4, "pregunta": "Quin filòsof va dir 'Penso, llavors existeixo'?", "opcions": ["Plató", "Aristòtil", "René Descartes", "Immanuel Kant"], "correcta": 2, "explicacio": "René Descartes ho va escriure al seu 'Discurs del mètode'." },
+        { "id": 5, "pregunta": "En quin any va caure el Mur de Berlín?", "opcions": ["1987", "1988", "1989", "1990"], "correcta": 2, "explicacio": "El mur va caure el 9 de novembre de 1989." },
+        { "id": 6, "pregunta": "Qui va ser el primer president de la Generalitat de Catalunya moderna (1931)?", "opcions": ["Lluís Companys", "Francesc Macià", "Josep Tarradellas", "Enric Prat de la Riba"], "correcta": 1, "explicacio": "Francesc Macià va ser el primer president de la Generalitat restaurada." },
+        { "id": 7, "pregunta": "En quina ciutat va ser assassinat Juli Cèsar?", "opcions": ["Roma", "Nàpols", "Milà", "Alexandria"], "correcta": 0, "explicacio": "Va ser assassinat al Senat de Roma l'any 44 aC." },
+        { "id": 8, "pregunta": "Quin any es va descobrir Amèrica?", "opcions": ["1482", "1492", "1502", "1512"], "correcta": 1, "explicacio": "Cristòfor Colom va arribar a Amèrica el 12 d'octubre de 1492." },
+        { "id": 9, "pregunta": "Quina civilització va construir les piràmides de Guiza?", "opcions": ["Grega", "Romana", "Egípcia", "Maia"], "correcta": 2, "explicacio": "Els antics egipcis les van construir com a tombes reals." },
+        { "id": 10, "pregunta": "Qui era conegut com el 'Rei Sol'?", "opcions": ["Felip II", "Lluís XIV", "Carles V", "Enric VIII"], "correcta": 1, "explicacio": "Lluís XIV de França va rebre aquest sobrenom per la seva monarquia absoluta." },
+        { "id": 11, "pregunta": "En quin any va començar la Primera Guerra Mundial?", "opcions": ["1910", "1914", "1918", "1939"], "correcta": 1, "explicacio": "La guerra va començar el 1914 després de l'assassinat de l'arxiduc Francesc Ferran." },
+        { "id": 12, "pregunta": "Quina reina anglesa va governar durant 63 anys fins al 1901?", "opcions": ["Elisabet I", "Victòria", "Elisabet II", "Anna"], "correcta": 1, "explicacio": "La Reina Victòria va donar nom a l'època victoriana." },
+        { "id": 13, "pregunta": "Quin esdeveniment va marcar l'inici de l'Edat Moderna?", "opcions": ["Caiguda de Roma", "Revolució Francesa", "Descobriment d'Amèrica", "Invent de la ràdio"], "correcta": 2, "explicacio": "El 1492 se sol considerar l'inici de l'Edat Moderna." },
+        { "id": 14, "pregunta": "Quina era la moneda d'Espanya abans de l'euro?", "opcions": ["Escut", "Pesseta", "Real", "Lliura"], "correcta": 1, "explicacio": "La pesseta va ser la moneda oficial fins al 2002." },
+        { "id": 15, "pregunta": "Qui va ser la primera dona a guanyar un Premi Nobel?", "opcions": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Frida Kahlo"], "correcta": 0, "explicacio": "Marie Curie el va guanyar en Física (1903) i Química (1911)." },
+        { "id": 16, "pregunta": "Quin país va envair Polònia el 1939 iniciant la 2a Guerra Mundial?", "opcions": ["Itàlia", "URSS", "Alemanya", "Japó"], "correcta": 2, "explicacio": "L'Alemanya nazi va envair Polònia l'1 de setembre de 1939." },
+        { "id": 17, "pregunta": "Com es deia el vaixell que va portar els pares pelegrins a Amèrica el 1620?", "opcions": ["Santa Maria", "Beagle", "Mayflower", "Endeavour"], "correcta": 2, "explicacio": "El Mayflower és un símbol clau de la història dels EUA." },
+        { "id": 18, "pregunta": "A quina illa va ser desterrat Napoleó per última vegada?", "opcions": ["Elba", "Còrsega", "Santa Helena", "Sicília"], "correcta": 2, "explicacio": "Va morir a l'illa de Santa Helena el 1821." },
+        { "id": 19, "pregunta": "Quin imperi va construir el Machu Picchu?", "opcions": ["Asteca", "Maia", "Inca", "Olmeca"], "correcta": 2, "explicacio": "L'imperi Inca va construir aquesta ciutadella als Andes peruans." },
+        { "id": 20, "pregunta": "Qui va escriure el 'Manifest Comunista' amb Friedrich Engels?", "opcions": ["Lenin", "Stalin", "Karl Marx", "Trotsky"], "correcta": 2, "explicacio": "Karl Marx és el principal teòric del socialisme científic." },
+        { "id": 21, "pregunta": "En quin segle va tenir lloc la Revolució Industrial?", "opcions": ["S. XVII", "S. XVIII", "S. XIX", "S. XX"], "correcta": 1, "explicacio": "Va començar a la segona meitat del segle XVIII a Gran Bretanya." },
+        { "id": 22, "pregunta": "Quin tractat va posar fi a la Primera Guerra Mundial?", "opcions": ["Tractat d'Utrecht", "Tractat de Versalles", "Tractat de Tordesillas", "Pacte de Varsòvia"], "correcta": 1, "explicacio": "Es va signar el 1919 a la Galeria dels Miralls de Versalles." },
+        { "id": 23, "pregunta": "Qui va ser el líder de la Revolució Cubana?", "opcions": ["Che Guevara", "Fidel Castro", "Batista", "Hugo Chávez"], "correcta": 1, "explicacio": "Fidel Castro va governar Cuba des de 1959." },
+        { "id": 24, "pregunta": "Quina guerra va durar des del 1955 fins al 1975?", "opcions": ["Guerra de Corea", "Guerra del Vietnam", "Guerra del Golf", "Guerra dels Sis Dies"], "correcta": 1, "explicacio": "La Guerra del Vietnam va acabar amb la caiguda de Saigon." },
+        { "id": 25, "pregunta": "Com es deia la primera nau que va portar l'home a la Lluna?", "opcions": ["Sputnik", "Apollo 11", "Challenger", "Vostok 1"], "correcta": 1, "explicacio": "L'Apollo 11 va aterrar a la Lluna el juliol de 1969." },
+        { "id": 26, "pregunta": "Quin famós pintor és l'autor de 'El Guernica'?", "opcions": ["Salvador Dalí", "Joan Miró", "Pablo Picasso", "Velázquez"], "correcta": 2, "explicacio": "Picasso el va pintar per denunciar el bombardeig de Guernica." },
+        { "id": 27, "pregunta": "Quin any es va aprovar l'actual Constitució Espanyola?", "opcions": ["1975", "1977", "1978", "1981"], "correcta": 2, "explicacio": "Va ser ratificada en referèndum el 6 de desembre de 1978." },
+        { "id": 28, "pregunta": "Qui va conquerir l'Imperi Asteca?", "opcions": ["Francisco Pizarro", "Hernán Cortés", "Diego de Almagro", "Vasco de Gama"], "correcta": 1, "explicacio": "Hernán Cortés va liderar la conquesta de Mèxic." },
+        { "id": 29, "pregunta": "Quina era la ciutat estat enemiga d'Atenes a l'antiga Grècia?", "opcions": ["Tebes", "Corint", "Esparta", "Troia"], "correcta": 2, "explicacio": "Esparta i Atenes van lluitar a les Guerres del Peloponès." },
+        { "id": 30, "pregunta": "Quin personatge històric va ser conegut com 'L'Alliberador'?", "opcions": ["José de San Martín", "Simón Bolívar", "Miguel Hidalgo", "Bernardo O'Higgins"], "correcta": 1, "explicacio": "Simón Bolívar va liderar la independència de diversos països sud-americans." },
+        { "id": 31, "pregunta": "A quin any es va produir la Revolució Francesa?", "opcions": ["1776", "1789", "1799", "1812"], "correcta": 1, "explicacio": "Va començar amb la presa de la Bastilla el 14 de juliol de 1789." },
+        { "id": 32, "pregunta": "Quin país dominava l'Índia com a colònia fins al 1947?", "opcions": ["França", "Portugal", "Regne Unit", "Països Baixos"], "correcta": 2, "explicacio": "L'Índia era coneguda com 'la joia de la corona' britànica." },
+        { "id": 33, "pregunta": "Qui va inventar la impremta a Europa?", "opcions": ["Leonardo da Vinci", "Johannes Gutenberg", "Isaac Newton", "Galileo Galilei"], "correcta": 1, "explicacio": "Gutenberg va inventar la impremta de tipus mòbils cap al 1440." }
       ]
     },
     "esport": {
       "name": "Esport",
       "questions": [
-        {
-          "id": 1,
-          "pregunta": "Quants jugadors hi ha en un equip de futbol a la gespa?",
-          "opcions": [
-            "9 jugadors",
-            "10 jugadors",
-            "11 jugadors",
-            "12 jugadors"
-          ],
-          "correcta": 2,
-          "explicacio": "Un equip de futbol té 11 jugadors en total a la gespa"
-        },
-        {
-          "id": 2,
-          "pregunta": "En quin país es van jugar les Olimpiades 2020?",
-          "opcions": [
-            "Japó",
-            "Corea del Sud",
-            "China",
-            "Tailàndia"
-          ],
-          "correcta": 0,
-          "explicacio": "Es van jugar a Tòquio, Japó en 2021 (covid delay)"
-        },
-        {
-          "id": 3,
-          "pregunta": "Quantes goles té Rafa Nadal de Grand Slam?",
-          "opcions": [
-            "12 Grand Slams",
-            "14 Grand Slams",
-            "16 Grand Slams",
-            "18 Grand Slams"
-          ],
-          "correcta": 3,
-          "explicacio": "Rafa Nadal ha guanyat 22 Grand Slams fins a la data"
-        },
-        {
-          "id": 4,
-          "pregunta": "Quines són les dues seleccions que més Campionats del Món han guanyat en futbol?",
-          "opcions": [
-            "Brasil i Francia",
-            "Alemanya i Brasil",
-            "Brasil i Anglaterra",
-            "Alemanya i Italia"
-          ],
-          "correcta": 1,
-          "explicacio": "Brasil i Alemanya han guanyat 5 Mundials cadascuna"
-        },
-        {
-          "id": 5,
-          "pregunta": "En quants minuts es divideix un partit de futbol?",
-          "opcions": [
-            "2 temps de 40 minuts",
-            "2 temps de 45 minuts",
-            "2 temps de 50 minuts",
-            "2 temps de 60 minuts"
-          ],
-          "correcta": 1,
-          "explicacio": "Un partit de futbol té 2 temps de 45 minuts cadascun"
-        }
+        { "id": 1, "pregunta": "Quants jugadors hi ha en un equip de futbol a la gespa?", "opcions": ["9", "10", "11", "12"], "correcta": 2, "explicacio": "Són 11 jugadors per equip incloent el porter." },
+        { "id": 2, "pregunta": "En quin país es van jugar les Olimpiades 2020?", "opcions": ["Japó", "Corea del Sud", "Xina", "Tailàndia"], "correcta": 0, "explicacio": "Es van celebrar a Tòquio el 2021 a causa de la pandèmia." },
+        { "id": 3, "pregunta": "Quants títols de Grand Slam ha guanyat Rafa Nadal?", "opcions": ["20", "21", "22", "24"], "correcta": 2, "explicacio": "Nadal té 22 títols de Grand Slam en la seva carrera." },
+        { "id": 4, "pregunta": "Quines seleccions han guanyat més Mundials de futbol fins al 2022 (homes)?", "opcions": ["Brasil", "Alemanya i Itàlia", "Brasil i Alemanya", "Alemanya i França"], "correcta": 0, "explicacio": "Brasil és l'única amb 5 títols." },
+        { "id": 5, "pregunta": "En quants minuts es divideix un partit de futbol estàndard?", "opcions": ["80", "90", "100", "120"], "correcta": 1, "explicacio": "Dos temps de 45 minuts fan un total de 90 minuts." },
+        { "id": 6, "pregunta": "Quin és el temps rècord de l'Usain Bolt als 100 metres llisos?", "opcions": ["9.58s", "9.69s", "9.72s", "9.81s"], "correcta": 0, "explicacio": "El rècord de 9.58s va ser establert a Berlín el 2009." },
+        { "id": 7, "pregunta": "Com es diu quan un jugador de bàsquet anota tres punts?", "opcions": ["Esmaixada", "Triple", "Tir lliure", "Bandeja"], "correcta": 1, "explicacio": "Un llançament des de darrere de la línia de 6.75m val 3 punts." },
+        { "id": 8, "pregunta": "Quin ciclista té el rècord de 5 Tours de França consecutius?", "opcions": ["Eddy Merckx", "Miguel Induráin", "Lance Armstrong", "Bernard Hinault"], "correcta": 1, "explicacio": "Induráin els va guanyar entre 1991 i 1995." },
+        { "id": 9, "pregunta": "Cada quants anys se celebren els Jocs Olímpics?", "opcions": ["2 anys", "3 anys", "4 anys", "5 anys"], "correcta": 2, "explicacio": "Se celebren cada 4 anys, alternant estiu i hivern cada 2." },
+        { "id": 10, "pregunta": "Quin esport practica Tiger Woods?", "opcions": ["Tenis", "Golf", "Rugbi", "Natació"], "correcta": 1, "explicacio": "Tiger Woods és un dels millors golfistes de la història." },
+        { "id": 11, "pregunta": "Quina és la distància d'una marató?", "opcions": ["21.09 km", "42.195 km", "50 km", "10 km"], "correcta": 1, "explicacio": "La marató té una distància oficial de 42,195 quilòmetres." },
+        { "id": 12, "pregunta": "Quin equip de la NBA té més anells de campió?", "opcions": ["Lakers", "Celtics", "Bulls", "Warriors"], "correcta": 1, "explicacio": "Els Celtics i els Lakers estan empatats (17/18 segons l'any actual). Històricament Celtics." },
+        { "id": 13, "pregunta": "En quin esport s'utilitza un 'puck'?", "opcions": ["Hoquei herba", "Hoquei gel", "Lacrosse", "Polo"], "correcta": 1, "explicacio": "El puck és el disc de cautxú vulcanitzat de l'hoquei sobre gel." },
+        { "id": 14, "pregunta": "Qui és conegut com 'The GOAT' al futbol americà (NFL)?", "opcions": ["Patrick Mahomes", "Tom Brady", "Joe Montana", "Peyton Manning"], "correcta": 1, "explicacio": "Tom Brady té 7 anells de la Super Bowl." },
+        { "id": 15, "pregunta": "Com es diu el premi al millor jugador de futbol de l'any?", "opcions": ["Bota d'Or", "Pilota d'Or", "The Best", "Trofeu Pichichi"], "correcta": 1, "explicacio": "La Pilota d'Or l'atorga la revista France Football." },
+        { "id": 16, "pregunta": "Quina és la puntuació màxima en un partit de bitlles (bowling)?", "opcions": ["100", "200", "300", "400"], "correcta": 2, "explicacio": "Un joc perfecte (12 strikes) suma 300 punts." },
+        { "id": 17, "pregunta": "Quin país ha guanyat més medalles en la història dels Jocs Olímpics d'estiu?", "opcions": ["Xina", "Rússia", "EUA", "Alemanya"], "correcta": 2, "explicacio": "Els Estats Units lideren el medaller històric." },
+        { "id": 18, "pregunta": "A quin esport pertany el terme 'home run'?", "opcions": ["Cricket", "Bèisbol", "Softbol", "Golf"], "correcta": 1, "explicacio": "Un home run és quan el batedor fa tota la volta al diamant." },
+        { "id": 19, "pregunta": "Quants sets s'han de guanyar per vèncer un partit de tenis masculí en un Grand Slam?", "opcions": ["2", "3", "4", "5"], "correcta": 1, "explicacio": "En els Grand Slams masculins es juga al millor de 5 sets (en calen 3)." },
+        { "id": 20, "pregunta": "En quin any es van celebrar els Jocs Olímpics de Barcelona?", "opcions": ["1988", "1990", "1992", "1994"], "correcta": 2, "explicacio": "Barcelona '92 va ser un punt d'inflexió per a la ciutat." },
+        { "id": 21, "pregunta": "Qui té el rècord de més Pilotes d'Or?", "opcions": ["Cristiano Ronaldo", "Lionel Messi", "Pelé", "Johan Cruyff"], "correcta": 1, "explicacio": "Lionel Messi n'ha guanyat 8 (fins al 2023)." },
+        { "id": 22, "pregunta": "Com es diu el campionat de rugbi entre les nacions de l'hemisferi nord?", "opcions": ["Copa del Món", "Sis Nacions", "Rugby Championship", "Super Rugby"], "correcta": 1, "explicacio": "El Torneig de les Sis Nacions inclou Escòcia, França, Gal·les, Anglaterra, Irlanda i Itàlia." },
+        { "id": 23, "pregunta": "Quants boxejadors hi ha al ring durant un combat?", "opcions": ["1", "2", "3", "4"], "correcta": 1, "explicacio": "Hi ha 2 boxejadors (i un àrbitre)." },
+        { "id": 24, "pregunta": "Quin és l'estil de natació més ràpid?", "opcions": ["Braça", "Papallona", "Crol", "Esquena"], "correcta": 2, "explicacio": "El crol o estil lliure és el més ràpid." },
+        { "id": 25, "pregunta": "En quin esport destaca Simone Biles?", "opcions": ["Natació", "Gimnàstica artística", "Atletisme", "Patinatge"], "correcta": 1, "explicacio": "És una de les gimnastes més llorejades de la història." },
+        { "id": 26, "pregunta": "Quin color de mallot porta el líder del Tour de França?", "opcions": ["Vermell", "Verd", "Groc", "Blanc"], "correcta": 2, "explicacio": "El 'maillot jaune' (groc) distingeix el líder de la general." },
+        { "id": 27, "pregunta": "Quina selecció va guanyar el Mundial de Futbol femení el 2023?", "opcions": ["EUA", "Anglaterra", "Espanya", "Suècia"], "correcta": 2, "explicacio": "Espanya va guanyar la seva primera estrella vencent Anglaterra." },
+        { "id": 28, "pregunta": "Com es diu el llançament de penal en hoquei patins?", "opcions": ["Penal", "Falta directa", "Penalty-shot", "Bull"], "correcta": 0, "explicacio": "Es llança des del punt de penal, a 5.48 metres de la porteria." },
+        { "id": 29, "pregunta": "Quants canvis es permeten en un partit de futbol oficial actualment?", "opcions": ["3", "4", "5", "6"], "correcta": 2, "explicacio": "Des de la pandèmia es permeten 5 canvis en 3 finestres." },
+        { "id": 30, "pregunta": "On es troba el circuit de Fórmula 1 d'Interlagos?", "opcions": ["Espanya", "Brasil", "Itàlia", "Mèxic"], "correcta": 1, "explicacio": "Interlagos està situat a São Paulo, Brasil." },
+        { "id": 31, "pregunta": "Quants forats té un camp de golf estàndard?", "opcions": ["9", "12", "18", "21"], "correcta": 2, "explicacio": "Un recorregut complet de golf té 18 forats." },
+        { "id": 32, "pregunta": "Quin és l'esport nacional del Japó?", "opcions": ["Judo", "Karate", "Sumo", "Kendo"], "correcta": 2, "explicacio": "El sumo és considerat l'esport nacional i una tradició mil·lenària." },
+        { "id": 33, "pregunta": "Qui va guanyar el primer Mundial de Futbol (1930)?", "opcions": ["Argentina", "Uruguai", "Brasil", "Itàlia"], "correcta": 1, "explicacio": "Uruguai va ser l'amfitrió i el primer campió del món." }
       ]
     }
   }
