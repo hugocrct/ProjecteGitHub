@@ -170,7 +170,7 @@ function showError(message) {
  * Va a la pantalla de selecció de categoria
  */
 function goToCategory() {
-    console.log('🎯 Anant a categoria...');
+    console.log('Anant a categoria...');
 
     // Mostrar nom del jugador
     updateSaludoText();
@@ -188,14 +188,14 @@ function goToCategory() {
 function updateSaludoText() {
     const saludoMessage = `Hola, ${gameState.player.name}!`;
     domElements.saludoText.textContent = saludoMessage;
-    console.log(`👋 ${saludoMessage}`);
+    console.log(`${saludoMessage}`);
 }
 
 /**
  * Inicialitza els botons de categoria
  */
 function initCategoryButtons() {
-    console.log('🔘 Inicialitzant botons de categoria...');
+    console.log('Inicialitzant botons de categoria...');
 
     const categories = gameState.categories;
     const categoryKeys = Object.keys(categories);
@@ -253,7 +253,7 @@ function selectCategory(categoryKey) {
     gameState.stats.totalQuestions = questions.length;
     gameState.stats.timeStarted = new Date();
 
-    console.log(`✅ Joc iniciat amb ${questions.length} preguntes`);
+    console.log(`Joc iniciat amb ${questions.length} preguntes`);
 
     // Anar a la pantalla del joc
     startGame();
@@ -265,7 +265,7 @@ function selectCategory(categoryKey) {
  * Inicialitza variables i mostra primera pregunta
  */
 function startGame() {
-    console.log('🎮 Joc iniciat!');
+    console.log('Joc iniciat!');
 
     // Reset variables
     gameState.currentQuestion = 0;
@@ -306,7 +306,7 @@ function showQuestion() {
  * Finalitza el joc i mostra resultats
  */
 function endGame() {
-    console.log('🏁 Joc finalitzat!');
+    console.log('Joc finalitzat!');
 
     gameState.stats.timeEnded = new Date();
 
@@ -318,3 +318,162 @@ function endGame() {
         detail: gameState
     }));
 }
+
+// 8. NAVEGACIÓ DE PANTALLES
+// ============================================
+
+/**
+ * Canvia a una pantalla específica
+ * @param {string} screenName - Nom de la pantalla
+ */
+function changeScreen(screenName) {
+    console.log(`Canviant a pantalla: ${screenName}`);
+
+    // Validar pantalla
+    const validScreens = ['inicio', 'categoria', 'joc', 'resultats'];
+    if (!validScreens.includes(screenName)) {
+        console.error(`Pantalla no vàlida: ${screenName}`);
+        return;
+    }
+
+    // Ocultar totes les pantalles
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.remove('active');
+    });
+
+    // Mostrar la pantalla seleccionada
+    const screenElement = document.getElementById(`screen-${screenName}`);
+    if (screenElement) {
+        screenElement.classList.add('active');
+        gameState.currentScreen = screenName;
+        console.log(`Pantalla mostrada: ${screenName}`);
+    } else {
+        console.error(`Element de pantalla no trobat: screen-${screenName}`);
+    }
+}
+
+/**
+ * Torna a la pantalla inicial (reset total)
+ */
+function resetGame() {
+    console.log('Reset del joc...');
+
+    // Reset l'estat
+    gameState.player.name = '';
+    gameState.player.score = 0;
+    gameState.currentQuestion = 0;
+    gameState.stats = {
+        totalQuestions: 0,
+        correctAnswers: 0,
+        wrongAnswers: 0,
+        timeStarted: null,
+        timeEnded: null
+    };
+
+    // Neteija input
+    domElements.inputNom.value = '';
+
+    // Torna a inici
+    changeScreen('inicio');
+    initScreenInicio();
+}
+
+// 9. CARREGADA DE PREGUNTES
+/**
+ * Carrega les preguntes des de data/questions.json
+ */
+async function loadQuestions() {
+    try {
+        console.log('Carregant preguntes...');
+
+        const response = await fetch('data/questions.json');
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        gameState.categories = data.categories;
+
+        console.log(`Preguntes carregades: ${Object.keys(data.categories).length} categories`);
+
+        return true;
+    } catch (error) {
+        console.error('Error carregant preguntes:', error);
+        showError('Error al caregar les preguntes. Comprova la connexió.');
+        return false;
+    }
+}
+
+// 10. INICIALITZACIÓ PRINCIPAL
+/**
+ * Inicialitza l'aplicació quan es carrega el DOM
+ */
+async function initApp() {
+    console.log('Inicialitzant aplicació...');
+    console.log('='.repeat(50));
+
+    // 1. Carregar preguntes
+    const questionsLoaded = await loadQuestions();
+
+    if (!questionsLoaded) {
+        console.error('No es van poder carregar les preguntes');
+        return;
+    }
+
+    // 2. Inicialitzar pantalla d'inici
+    initScreenInicio();
+
+    // 3. Setup event listeners globals
+    setupGlobalEventListeners();
+
+    console.log('Aplicació inicialitzada correctament');
+    console.log('='.repeat(50));
+}
+
+/**
+ * Setup dels event listeners globals
+ */
+function setupGlobalEventListeners() {
+    console.log('🔗 Configurant event listeners globals...');
+
+    // Botó "Tornar a jugar" (de resultats)
+    const btnTornar = document.getElementById('btn-tornar');
+    if (btnTornar) {
+        btnTornar.addEventListener('click', () => {
+            console.log('Tornant a categoria...');
+            goToCategory();
+        });
+    }
+
+    // Botó "Sortir" (de resultats)
+    const btnSortir = document.getElementById('btn-sortir');
+    if (btnSortir) {
+        btnSortir.addEventListener('click', () => {
+            console.log('Sortint del joc...');
+            resetGame();
+        });
+    }
+}
+
+// 11. INICIAR QUAN EL DOM ESTÁ LLEST
+// Esperar que el DOM estigui carregat
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initApp);
+} else {
+    // El DOM ja està carregat
+    initApp();
+}
+
+// 12. EXPORTS (per a altres fitxers)
+// Fer públiques les funcions principals
+window.gameState = gameState;
+window.changeScreen = changeScreen;
+window.selectCategory = selectCategory;
+window.resetGame = resetGame;
+window.startGame = startGame;
+window.showQuestion = showQuestion;
+window.endGame = endGame;
+
+// FI DEL FLUX D'INICI
+console.log('game-init.js carregat correctament');
