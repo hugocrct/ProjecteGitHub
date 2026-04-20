@@ -1,133 +1,79 @@
 {
   "categories": {
-    "historia": {
-      "name": "Historia",
+    "pelicules_i_series": {
+      "name": "Pel·lícules i Sèries",
       "questions": [
-        {
-          "id": 1,
-          "pregunta": "En quin any va acabar la Guerra Civil Espanyola?",
-          "opcions": [
-            "1936",
-            "1938",
-            "1939",
-            "1941"
-          ],
-          "correcta": 2,
-          "explicacio": "La Guerra Civil va acabar el 1939 amb la victòria franquista"
-        },
-        {
-          "id": 2,
-          "pregunta": "Quina fou la primera capital de Catalunya?",
-          "opcions": [
-            "Barcelona",
-            "Manresa",
-            "Lleida",
-            "Girona"
-          ],
-          "correcta": 2,
-          "explicacio": "Lleida fou primera capital com a centre dels Comtes de Cataluya"
-        },
-        {
-          "id": 3,
-          "pregunta": "En quin any va caure l'Imperi Romà d'Occident?",
-          "opcions": [
-            "395 dC",
-            "476 dC",
-            "600 dC",
-            "800 dC"
-          ],
-          "correcta": 1,
-          "explicacio": "L'Imperi Romà d'Occident va caure el 476 dC quan es va deposar l'últim emperador"
-        },
-        {
-          "id": 4,
-          "pregunta": "Quin filòsof va dir 'Pens, luego existo'?",
-          "opcions": [
-            "Platò",
-            "Aristòtil",
-            "René Descartes",
-            "Immanuel Kant"
-          ],
-          "correcta": 2,
-          "explicacio": "René Descartes va formular aquesta famosa frase del pensament occidental"
-        },
-        {
-          "id": 5,
-          "pregunta": "En quin any va caure el Mur de Berlín?",
-          "opcions": [
-            "1987",
-            "1988",
-            "1989",
-            "1990"
-          ],
-          "correcta": 2,
-          "explicacio": "El Mur de Berlín va caure el 9 de novembre de 1989"
-        }
+        { "id": 1, "pregunta": "Com es diu el ninot de fusta a qui li creix el nas quan menteix?", "opcions": ["Pinotxo", "Gepetto", "Pepe Grill", "Dumbo"], "correcta": 0, "explicacio": "Pinotxo és el protagonista del clàssic de Disney basat en el llibre de Carlo Collodi." },
+        { "id": 2, "pregunta": "Quin personatge de Marvel porta un martell anomenat Mjölnir?", "opcions": ["Iron Man", "Hulk", "Thor", "Loki"], "correcta": 2, "explicacio": "Thor, el déu del tro, és l'únic capaç d'aixecar el seu martell màgic." },
+        { "id": 3, "pregunta": "Com es diu la germana d'Anna a la pel·lícula 'Frozen'?", "opcions": ["Elsa", "Ariel", "Bella", "Mèrida"], "correcta": 0, "explicacio": "L'Elsa és la reina de les neus i germana gran de l'Anna." },
+        { "id": 4, "pregunta": "A quina sèrie de dibuixos animats hi ha un gos que es diu Brian i un bebè que es diu Stewie?", "opcions": ["Els Simpson", "Padre de Familia", "Futurama", "American Dad"], "correcta": 1, "explicacio": "Padre de Familia (Family Guy) narra les aventures de la família Griffin." },
+        { "id": 5, "pregunta": "Quin és el nom del personatge que interpreta Johnny Depp a 'Pirates del Carib'?", "opcions": ["Will Turner", "Jack Sparrow", "Hector Barbossa", "Davy Jones"], "correcta": 1, "explicacio": "El capità Jack Sparrow és conegut pel seu caràcter excèntric i divertit." },
+        { "id": 6, "pregunta": "Com es diu el lleó protagonista de 'Madagascar'?", "opcions": ["Alex", "Marty", "Melman", "Gloria"], "correcta": 0, "explicacio": "L'Alex és el lleó que és l'atracció principal del zoo de Central Park." },
+        { "id": 7, "pregunta": "A quina ciutat viuen els personatges de la sèrie 'Friends'?", "opcions": ["Los Angeles", "Chicago", "Nova York", "Miami"], "correcta": 2, "explicacio": "La sèrie se situa principalment a Manhattan, Nova York." },
+        { "id": 8, "pregunta": "Qui és el millor amic de l'Harry Potter?", "opcions": ["Draco Malfoy", "Ron Weasley", "Neville Longbottom", "Cedric Diggory"], "correcta": 1, "explicacio": "Ron Weasley és el company inseparable de Harry des del primer curs." },
+        { "id": 9, "pregunta": "Com es diu el pare de la Nemo?", "opcions": ["Marlin", "Dory", "Bruce", "Crush"], "correcta": 0, "explicacio": "Marlin recorre tot l'oceà per trobar el seu fill Nemo." },
+        { "id": 10, "pregunta": "Quin superheroi té una ratapinyada com a símbol?", "opcions": ["Superman", "Batman", "Flash", "Aquaman"], "correcta": 1, "explicacio": "Batman utilitza la por als ratpenats per combatre el crim a Gotham." },
+        { "id": 11, "pregunta": "A quina sèrie els personatges 'cuinen' una substància blava a una caravana?", "opcions": ["The Wire", "Narcos", "Breaking Bad", "Ozark"], "correcta": 2, "explicacio": "Walter White i Jesse Pinkman són els protagonistes de Breaking Bad." },
+        { "id": 12, "pregunta": "Com es diu l'amic fidel d'en Shrek que no para de parlar?", "opcions": ["Gat amb Botes", "Ruc", "Pinotxo", "Gengi"], "correcta": 1, "explicacio": "En Ruc (Asno) és el millor amic i company d'aventures de l'ogre." },
+        { "id": 13, "pregunta": "Qui és la princesa de Disney que perd una sabatilla de vidre?", "opcions": ["Blancaneu", "La Ventafocs", "La Bella Dorment", "Tiana"], "correcta": 1, "explicacio": "La Ventafocs la perd quan marxa del ball a mitjanit." },
+        { "id": 14, "pregunta": "A quin planeta viatja el robot WALL-E a la seva pel·lícula?", "opcions": ["Mart", "La Lluna", "L'espai (a una nau)", "Venus"], "correcta": 2, "explicacio": "WALL-E acaba a la nau Axiom, on viuen els humans que van deixar la Terra." },
+        { "id": 15, "pregunta": "Com es diu el detectiu privat que viu a Baker Street?", "opcions": ["Hercule Poirot", "Sherlock Holmes", "Philip Marlowe", "Sam Spade"], "correcta": 1, "explicacio": "Sherlock Holmes viu al 221B de Baker Street a Londres." },
+        { "id": 16, "pregunta": "Quin color té en Shrek?", "opcions": ["Blau", "Vermell", "Verd", "Groc"], "correcta": 2, "explicacio": "L'ogre més famós del cinema és de color verd." },
+        { "id": 17, "pregunta": "Com es diu el mestre de les Tortugues Ninja?", "opcions": ["Splinter", "Shredder", "Casey Jones", "April O'Neil"], "correcta": 0, "explicacio": "L'Splinter és una rata que actua com a pare i mestre de les tortugues." },
+        { "id": 18, "pregunta": "Quin actor interpreta el paper de 'Indiana Jones'?", "opcions": ["Tom Cruise", "Harrison Ford", "Brad Pitt", "Mel Gibson"], "correcta": 1, "explicacio": "Harrison Ford ha donat vida a l'arqueòleg en totes les seves pel·lícules." },
+        { "id": 19, "pregunta": "A quina sèrie hi ha uns nens que viatgen en una furgoneta anomenada 'The Mystery Machine'?", "opcions": ["Scooby-Doo", "Pokémon", "Digimon", "Ben 10"], "correcta": 0, "explicacio": "L'Scooby i els seus amics la fan servir per anar a resoldre misteris." },
+        { "id": 20, "pregunta": "Com es diu el villà de 'La Guerra de les Galàxies' que porta una màscara negra?", "opcions": ["Darth Maul", "Darth Vader", "Palpatine", "Kylo Ren"], "correcta": 1, "explicacio": "Darth Vader és un dels villans més icònics de la història del cinema." },
+        { "id": 21, "pregunta": "A quina pel·lícula de Disney surt un geni que viu dins d'una llàntia?", "opcions": ["Mulan", "Aladdin", "Hèrcules", "Tarzan"], "correcta": 1, "explicacio": "El Geni ajuda l'Aladdin a complir els seus desitjos." },
+        { "id": 22, "pregunta": "Com es diu el ninot que és 'el xèrif' a Toy Story?", "opcions": ["Buzz Lightyear", "Woody", "Rex", "Slinky"], "correcta": 1, "explicacio": "En Woody és el ninot preferit de l'Andy i el líder de les joguines." },
+        { "id": 23, "pregunta": "A quina sèrie surt un bar anomenat 'Central Perk'?", "opcions": ["Friends", "How I Met Your Mother", "Seinfeld", "The Big Bang Theory"], "correcta": 0, "explicacio": "És el punt de trobada habitual dels sis protagonistes de Friends." },
+        { "id": 24, "pregunta": "Quin és el nom del gos de la família de 'The Simpsons'?", "opcions": ["Snowball", "Ayudante de Santa Claus", "Rex", "Boby"], "correcta": 1, "explicacio": "L'adoptaren al canòdrom a l'especial de Nadal de la primera temporada." },
+        { "id": 25, "pregunta": "Com es diu la noia que va al País de les Meravelles?", "opcions": ["Dorothy", "Alícia", "Wendy", "Clara"], "correcta": 1, "explicacio": "Alícia és la protagonista del conte de Lewis Carroll portat al cinema." },
+        { "id": 26, "pregunta": "A quina pel·lícula uns dinosaures s'escapen d'un parc temàtic?", "opcions": ["King Kong", "Jurassic Park", "Godzilla", "Ice Age"], "correcta": 1, "explicacio": "Jurassic Park, dirigida per Steven Spielberg, es va estrenar el 1993." },
+        { "id": 27, "pregunta": "Com es diu el barri on viuen els Simpson?", "opcions": ["Evergreen Terrace", "Ocean View", "Maple Street", "Sunset Blvd"], "correcta": 0, "explicacio": "La casa dels Simpson està situada al número 742 d'Evergreen Terrace." },
+        { "id": 28, "pregunta": "Quin és el nom de la mascota d'en Mickey Mouse?", "opcions": ["Goofy", "Pluto", "Donald", "Daisy"], "correcta": 1, "explicacio": "En Pluto és el gos fidel d'en Mickey i, a diferència d'en Goofy, no parla." },
+        { "id": 29, "pregunta": "Qui és el superheroi que es converteix en un gegant verd quan s'enfada?", "opcions": ["Iron Man", "Hulk", "Capità Amèrica", "Thor"], "correcta": 1, "explicacio": "El doctor Bruce Banner es transforma en Hulk a causa de la radiació gamma." },
+        { "id": 30, "pregunta": "Com es diu la ciutat submarina on viu en Bob Esponja?", "opcions": ["Atlantis", "Bikini Bottom", "Ocean City", "Deep Sea"], "correcta": 1, "explicacio": "Bikini Bottom (Fons de Bikini) és on es troba la pinya on viu en Bob." },
+        { "id": 31, "pregunta": "A quina pel·lícula apareixen uns éssers petits i grocs anomenats Minions?", "opcions": ["Shrek", "Despicable Me (Gru)", "Toy Story", "Cars"], "correcta": 1, "explicacio": "Els Minions són els ajudants del villà Gru." },
+        { "id": 32, "pregunta": "Com es diu l'escola de màgia de Harry Potter?", "opcions": ["Hogwarts", "Wiz-Tech", "Sky High", "Nevermore"], "correcta": 0, "explicacio": "Hogwarts és el castell on s'entrenen els joves mags al Regne Unit." },
+        { "id": 33, "pregunta": "Qui és el protagonista de la pel·lícula 'Missió Impossible'?", "opcions": ["James Bond", "Jason Bourne", "Ethan Hunt", "John Wick"], "correcta": 2, "explicacio": "Ethan Hunt, interpretat per Tom Cruise, és l'agent de l'FMI." }
       ]
     },
     "esport": {
       "name": "Esport",
       "questions": [
-        {
-          "id": 1,
-          "pregunta": "Quants jugadors hi ha en un equip de futbol a la gespa?",
-          "opcions": [
-            "9 jugadors",
-            "10 jugadors",
-            "11 jugadors",
-            "12 jugadors"
-          ],
-          "correcta": 2,
-          "explicacio": "Un equip de futbol té 11 jugadors en total a la gespa"
-        },
-        {
-          "id": 2,
-          "pregunta": "En quin país es van jugar les Olimpiades 2020?",
-          "opcions": [
-            "Japó",
-            "Corea del Sud",
-            "China",
-            "Tailàndia"
-          ],
-          "correcta": 0,
-          "explicacio": "Es van jugar a Tòquio, Japó en 2021 (covid delay)"
-        },
-        {
-          "id": 3,
-          "pregunta": "Quantes goles té Rafa Nadal de Grand Slam?",
-          "opcions": [
-            "12 Grand Slams",
-            "14 Grand Slams",
-            "16 Grand Slams",
-            "18 Grand Slams"
-          ],
-          "correcta": 3,
-          "explicacio": "Rafa Nadal ha guanyat 22 Grand Slams fins a la data"
-        },
-        {
-          "id": 4,
-          "pregunta": "Quines són les dues seleccions que més Campionats del Món han guanyat en futbol?",
-          "opcions": [
-            "Brasil i Francia",
-            "Alemanya i Brasil",
-            "Brasil i Anglaterra",
-            "Alemanya i Italia"
-          ],
-          "correcta": 1,
-          "explicacio": "Brasil i Alemanya han guanyat 5 Mundials cadascuna"
-        },
-        {
-          "id": 5,
-          "pregunta": "En quants minuts es divideix un partit de futbol?",
-          "opcions": [
-            "2 temps de 40 minuts",
-            "2 temps de 45 minuts",
-            "2 temps de 50 minuts",
-            "2 temps de 60 minuts"
-          ],
-          "correcta": 1,
-          "explicacio": "Un partit de futbol té 2 temps de 45 minuts cadascun"
-        }
+        { "id": 1, "pregunta": "Quants punts val un tir lliure en bàsquet?", "opcions": ["1", "2", "3", "0"], "correcta": 0, "explicacio": "Cada cistella de tir lliure suma un punt al marcador." },
+        { "id": 2, "pregunta": "En quin esport s'utilitza una raqueta i una pilota groga?", "opcions": ["Ping-pong", "Tenis", "Bàdminton", "Golf"], "correcta": 1, "explicacio": "El tenis es juga amb pilotes grogues i raquetes en diverses superfícies." },
+        { "id": 3, "pregunta": "Quin és l'estil de natació on els braços es mouen com les ales d'un insecte?", "opcions": ["Crol", "Braça", "Esquena", "Papallona"], "correcta": 3, "explicacio": "L'estil papallona és un dels més exigents físicament." },
+        { "id": 4, "pregunta": "Com es diu el lloc on es fan les curses de cavalls?", "opcions": ["Estadi", "Hipòdrom", "Velòdrom", "Circuit"], "correcta": 1, "explicacio": "L'hipòdrom és el recinte tancat on es disputen les curses hípiques." },
+        { "id": 5, "pregunta": "Quants segons té un equip de bàsquet per llançar a cistella?", "opcions": ["10", "24", "30", "45"], "correcta": 1, "explicacio": "La regla dels 24 segons s'aplica per fer el joc més dinàmic." },
+        { "id": 6, "pregunta": "Quin ciclista és conegut com 'El Caníbal'?", "opcions": ["Eddy Merckx", "Miguel Induráin", "Pedro Delgado", "Chris Froome"], "correcta": 0, "explicacio": "Eddy Merckx va rebre aquest nom per la seva gana insaciable de victòries." },
+        { "id": 7, "pregunta": "En quin esport es fan servir els termes 'birdie' i 'eagle'?", "opcions": ["Tenis", "Golf", "Cricket", "Beisbol"], "correcta": 1, "explicacio": "Són termes que indiquen el nombre de cops realitzats respecte al par del forat." },
+        { "id": 8, "pregunta": "Quina selecció de futbol porta una samarreta anomenada 'La Canarinha'?", "opcions": ["Argentina", "Brasil", "Colòmbia", "Espanya"], "correcta": 1, "explicacio": "La selecció de Brasil rep aquest nom pel color groc de la seva equipació." },
+        { "id": 9, "pregunta": "Com es diu la competició de ciclisme més famosa que es fa a França?", "opcions": ["Giro", "Vuelta", "Tour", "Classic"], "correcta": 2, "explicacio": "El Tour de França és la prova ciclista més prestigiosa del món." },
+        { "id": 10, "pregunta": "Quants jugadors hi ha en un equip de voleibol a la pista?", "opcions": ["5", "6", "7", "11"], "correcta": 1, "explicacio": "Cada equip té 6 jugadors a la pista durant el joc." },
+        { "id": 11, "pregunta": "En quin esport destaca l'espanyola Carolina Marín?", "opcions": ["Tenis", "Bàdminton", "Gimnàstica", "Natació"], "correcta": 1, "explicacio": "Carolina Marín ha estat campiona olímpica i mundial de bàdminton." },
+        { "id": 12, "pregunta": "Quin color de targeta significa expulsió directa en el futbol?", "opcions": ["Blava", "Groga", "Vermella", "Verda"], "correcta": 2, "explicacio": "La targeta vermella obliga el jugador a abandonar el camp immediatament." },
+        { "id": 13, "pregunta": "Com es diu el premi que s'entrega al guanyador d'un torneig de tenis de Grand Slam?", "opcions": ["Medalla", "Copa o Trofeu", "Cinturó", "Plat"], "correcta": 1, "explicacio": "Cada torneig té el seu trofeu específic, com la Copa dels Mosqueters a Roland Garros." },
+        { "id": 14, "pregunta": "Quin és l'esport oficial on es fan 'scrums' o 'melés'?", "opcions": ["Futbol Americà", "Rugbi", "Handbol", "Hoquei"], "correcta": 1, "explicacio": "La melé és una formació fixa per reiniciar el joc després d'una infracció menor al rugbi." },
+        { "id": 15, "pregunta": "A quin país es va inventar el bàsquet?", "opcions": ["Regne Unit", "EUA", "Canadà", "França"], "correcta": 1, "explicacio": "James Naismith el va inventar a Massachusetts l'any 1891." },
+        { "id": 16, "pregunta": "Quin és l'esport de lluita on no es permeten cops i l'objectiu és tombar l'adversari?", "opcions": ["Boxa", "Lluita lliure", "Judo", "Karate"], "correcta": 2, "explicacio": "El judo es basa en aprofitar la força del rival per desequilibrar-lo." },
+        { "id": 17, "pregunta": "Quants punts val un gol en futbol?", "opcions": ["1", "2", "3", "5"], "correcta": 0, "explicacio": "En futbol, cada gol suma una unitat al marcador de l'equip." },
+        { "id": 18, "pregunta": "En quin esport s'utilitza una bicicleta?", "opcions": ["Motocròs", "Ciclisme", "Atletisme", "Esgrima"], "correcta": 1, "explicacio": "El ciclisme inclou modalitats de carretera, muntanya i pista." },
+        { "id": 19, "pregunta": "Qui és el pilot de Fórmula 1 amb més títols mundials (empatat amb Schumacher)?", "opcions": ["Fernando Alonso", "Lewis Hamilton", "Max Verstappen", "Sebastian Vettel"], "correcta": 1, "explicacio": "Lewis Hamilton té 7 títols mundials de Fórmula 1." },
+        { "id": 20, "pregunta": "Com es diu el porter de futbol que va guanyar el Mundial 2010 amb Espanya?", "opcions": ["Victor Valdés", "Iker Casillas", "Pepe Reina", "David de Gea"], "correcta": 1, "explicacio": "Iker Casillas va ser el capità i una peça clau per guanyar el títol." },
+        { "id": 21, "pregunta": "A quin esport es juga el torneig de Wimbledon?", "opcions": ["Golf", "Tenis", "Rugbi", "Cricket"], "correcta": 1, "explicacio": "Wimbledon és el torneig més antic i prestigiós de tenis, jugat sobre herba." },
+        { "id": 22, "pregunta": "Quants jugadors hi ha en un equip d'handbol a la pista?", "opcions": ["5", "7", "11", "15"], "correcta": 1, "explicacio": "Són 7 jugadors, incloent el porter, per cada equip." },
+        { "id": 23, "pregunta": "Quin esport es practica en un velòdrom?", "opcions": ["Natació", "Ciclisme en pista", "Atletisme", "Patinatge"], "correcta": 1, "explicacio": "El velòdrom és una pista circular amb inclinació per a bicicletes." },
+        { "id": 24, "pregunta": "Com es diu quan un jugador de bàsquet fa passes sense botar la pilota?", "opcions": ["Dobles", "Passes", "Falta", "Taps"], "correcta": 1, "explicacio": "Si camines més de dos passos sense botar, l'àrbitre xiula passes." },
+        { "id": 25, "pregunta": "En quin esport s'utilitza un pal per colpejar una pilota cap a un forat?", "opcions": ["Hoquei", "Golf", "Billar", "Beisbol"], "correcta": 1, "explicacio": "El golf consisteix a completar un recorregut de forats amb el mínim de cops possibles." },
+        { "id": 26, "pregunta": "Quina ciutat va acollir els Jocs Olímpics d'estiu el 2024?", "opcions": ["Londres", "Tòquio", "París", "Madrid"], "correcta": 2, "explicacio": "París va organitzar els seus tercers Jocs Olímpics el 2024." },
+        { "id": 27, "pregunta": "Com es diu el tennista suís que va guanyar 20 Grand Slams i es va retirar fa poc?", "opcions": ["Novak Djokovic", "Roger Federer", "Stan Wawrinka", "Andy Murray"], "correcta": 1, "explicacio": "Roger Federer és considerat un dels millors i més elegants tennistes de la història." },
+        { "id": 28, "pregunta": "En quin esport es fa el 'salt de perxa'?", "opcions": ["Gimnàstica", "Atletisme", "Natació", "Hípica"], "correcta": 1, "explicacio": "És una disciplina de l'atletisme que consisteix a saltar una barra horitzontal amb l'ajuda d'una perxa flexible." },
+        { "id": 29, "pregunta": "Quina és la peça més important en els escacs, la que si cau s'acaba la partida?", "opcions": ["Reina", "Rei", "Torre", "Cavall"], "correcta": 1, "explicacio": "L'objectiu dels escacs és fer 'escac i mat' al rei contrari." },
+        { "id": 30, "pregunta": "Quants anells hi ha a la bandera olímpica?", "opcions": ["3", "4", "5", "6"], "correcta": 2, "explicacio": "Els 5 anells representen els 5 continents del món units per l'esport." },
+        { "id": 31, "pregunta": "En quin esport s'utilitza un arc i fletxes?", "opcions": ["Esgrima", "Tir amb arc", "Dards", "Caça"], "correcta": 1, "explicacio": "El tir amb arc és un esport de precisió que és olímpic des de fa molts anys." },
+        { "id": 32, "pregunta": "Com es diu l'estadi del FC Barcelona?", "opcions": ["Bernabéu", "Camp Nou (Spotify Camp Nou)", "Metropolitano", "Mestalla"], "correcta": 1, "explicacio": "El Camp Nou és un dels estadis amb més capacitat del món." },
+        { "id": 33, "pregunta": "Quants minuts dura un quart en un partit de bàsquet de la NBA?", "opcions": ["10", "12", "15", "20"], "correcta": 1, "explicacio": "A la NBA els quarts són de 12 minuts, a diferència dels 10 minuts de la FIBA." }
       ]
     }
   }
