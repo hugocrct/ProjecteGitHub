@@ -2,6 +2,7 @@
   "categories": {
     "pelicules_i_series": {
       "name": "Pel·lícules i Sèries",
+      "icon": "🎬",
       "questions": [
         { "id": 1, "pregunta": "Com es diu el ninot de fusta a qui li creix el nas quan menteix?", "opcions": ["Pinotxo", "Gepetto", "Pepe Grill", "Dumbo"], "correcta": 0, "explicacio": "Pinotxo és el protagonista del clàssic de Disney basat en el llibre de Carlo Collodi." },
         { "id": 2, "pregunta": "Quin personatge de Marvel porta un martell anomenat Mjölnir?", "opcions": ["Iron Man", "Hulk", "Thor", "Loki"], "correcta": 2, "explicacio": "Thor, el déu del tro, és l'únic capaç d'aixecar el seu martell màgic." },
@@ -40,6 +41,7 @@
     },
     "esport": {
       "name": "Esport",
+      "icon": "⚽",
       "questions": [
         { "id": 1, "pregunta": "Quants punts val un tir lliure en bàsquet?", "opcions": ["1", "2", "3", "0"], "correcta": 0, "explicacio": "Cada cistella de tir lliure suma un punt al marcador." },
         { "id": 2, "pregunta": "En quin esport s'utilitza una raqueta i una pilota groga?", "opcions": ["Ping-pong", "Tenis", "Bàdminton", "Golf"], "correcta": 1, "explicacio": "El tenis es juga amb pilotes grogues i raquetes en diverses superfícies." },
