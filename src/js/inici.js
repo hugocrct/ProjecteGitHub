@@ -435,7 +435,7 @@ async function initApp() {
  * Setup dels event listeners globals
  */
 function setupGlobalEventListeners() {
-    console.log('🔗 Configurant event listeners globals...');
+    console.log('Configurant event listeners globals...');
 
     // Botó "Tornar a jugar" (de resultats)
     const btnTornar = document.getElementById('btn-tornar');
