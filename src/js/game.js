@@ -15,17 +15,10 @@ export function iniciarJoc() {
     gameState.stats.timeouts = 0;
     
     const cat = gameState.categories[gameState.currentCategory];
-    dom.jocCategoria.textContent = cat.name;
+    if (dom.jocCategoria) dom.jocCategoria.textContent = cat.name;
     
     // Amagar feedback i netejar estils
-    dom.feedback.classList.add('amagat');
-    
-    // Netejar opcions
-    const botons = dom.gridOpcions.querySelectorAll('.boto--opcio');
-    botons.forEach(btn => {
-        btn.className = 'boto boto--opcio';
-        btn.disabled = false;
-    });
+    if (dom.feedback) dom.feedback.classList.add('amagat');
     
     // Mostrar pantalla de joc
     const pantallaJoc = document.getElementById('pantallaJoc');
@@ -67,26 +60,34 @@ export function aturarTimer() {
 
 // Actualitzar visual del timer
 function actualitzarTimer() {
-    dom.timerNumero.textContent = gameState.timeLeft;
-    const timerEl = dom.timerNumero.closest('.timer');
-    if (gameState.timeLeft <= 10) {
-        timerEl.classList.add('timer--urgent');
-    } else {
-        timerEl.classList.remove('timer--urgent');
+    if (dom.timerNumero) dom.timerNumero.textContent = gameState.timeLeft;
+    const timerEl = dom.timerNumero?.closest('.timer');
+    if (timerEl) {
+        if (gameState.timeLeft <= 10) {
+            timerEl.classList.add('timer--urgent');
+        } else {
+            timerEl.classList.remove('timer--urgent');
+        }
     }
 }
 
 // Processar resposta de l'usuari
 export function responder(indexResposta) {
+    console.log('Resposta rebuda:', indexResposta);
+    
     if (gameState.answered) return;
     gameState.answered = true;
     aturarTimer();
     
     const q = gameState.questions[gameState.currentQuestion];
+    if (!q) {
+        console.error('No hi ha pregunta actual!');
+        return;
+    }
+    
     const correcta = q.correcta;
     const botons = dom.gridOpcions.querySelectorAll('.boto--opcio');
     
-    // Marcar opcions com a correcta/incorrecta
     botons.forEach((btn, i) => {
         btn.disabled = true;
         if (i === correcta) btn.classList.add('correcta');
@@ -134,14 +135,16 @@ function mostrarFeedback(correcte, explicacio) {
 
 // Configurar event listener del botó següent
 export function setupGameEvents() {
-    dom.botoSeguent.addEventListener('click', async () => {
-        gameState.currentQuestion++;
-        if (gameState.currentQuestion >= gameState.stats.totalQuestions) {
-            const { acabarJoc } = await import('./results.js');
-            acabarJoc();
-        } else {
-            mostrarPregunta();
-            iniciarTimer();
-        }
-    });
+    if (dom.botoSeguent) {
+        dom.botoSeguent.addEventListener('click', async () => {
+            gameState.currentQuestion++;
+            if (gameState.currentQuestion >= gameState.stats.totalQuestions) {
+                const { acabarJoc } = await import('./results.js');
+                acabarJoc();
+            } else {
+                mostrarPregunta();
+                iniciarTimer();
+            }
+        });
+    }
 }

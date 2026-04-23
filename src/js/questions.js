@@ -3,17 +3,16 @@
 // =============================================
 
 import { gameState, QUESTIONS_PER_GAME } from './state.js';
-import { dom, mostrarPantalla } from './ui.js';
+import { dom } from './ui.js';
 import { iniciarJoc } from './game.js';
 
 // Carregar preguntes del fitxer JSON
 export async function carregarPreguntes() {
     try {
-        const response = await fetch('preguntes/questions.json');
+        const response = await fetch('../preguntes/questions.json');
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
         
-        // Afegir icones per defecte si no en tenen
         const icones = { 
             historia: '📜', 
             esport: '⚽', 
@@ -26,6 +25,7 @@ export async function carregarPreguntes() {
         });
         
         gameState.categories = data.categories;
+        console.log('Preguntes carregades correctament:', Object.keys(gameState.categories));
         return true;
     } catch (err) {
         console.error('Error carregant preguntes:', err);
@@ -35,7 +35,7 @@ export async function carregarPreguntes() {
 
 // Inicialitzar pantalla de categories
 export function initCategories() {
-    dom.nomJugador.textContent = gameState.player.name;
+    if (dom.nomJugador) dom.nomJugador.textContent = gameState.player.name;
     const categoryKeys = Object.keys(gameState.categories);
     
     dom.botoCategories.forEach((boto, i) => {
@@ -64,16 +64,17 @@ export function initCategories() {
 
 // Seleccionar categoria i preparar el joc
 export function seleccionarCategoria(key) {
+    console.log('Categoria seleccionada:', key);
     const cat = gameState.categories[key];
     if (!cat) return;
     
     gameState.currentCategory = key;
     
-    // Barreja les preguntes i limita a QUESTIONS_PER_GAME
     const shuffled = [...cat.questions].sort(() => Math.random() - 0.5);
     gameState.questions = shuffled.slice(0, QUESTIONS_PER_GAME);
     gameState.stats.totalQuestions = gameState.questions.length;
     
+    console.log(`${gameState.questions.length} preguntes carregades`);
     iniciarJoc();
 }
 
@@ -87,30 +88,34 @@ export function mostrarPregunta() {
     
     gameState.answered = false;
     
-    // Amagar feedback
-    dom.feedback.classList.add('amagat');
-    dom.feedback.classList.remove('feedback--error');
+    if (dom.feedback) {
+        dom.feedback.classList.add('amagat');
+        dom.feedback.classList.remove('feedback--error');
+    }
     
-    // Actualitzar progrés
     const idx = gameState.currentQuestion;
     const total = gameState.stats.totalQuestions;
     const progres = (idx / total) * 100;
-    dom.barraProgresInner.style.width = `${progres}%`;
-    dom.progresText.textContent = `Pregunta ${idx + 1} de ${total}`;
+    if (dom.barraProgresInner) dom.barraProgresInner.style.width = `${progres}%`;
+    if (dom.progresText) dom.progresText.textContent = `Pregunta ${idx + 1} de ${total}`;
     
-    // Mostrar pregunta
-    dom.textPregunta.textContent = q.pregunta;
+    if (dom.textPregunta) dom.textPregunta.textContent = q.pregunta;
     
-    // Mostrar opcions
     const botons = dom.gridOpcions.querySelectorAll('.boto--opcio');
     botons.forEach((btn, i) => {
         btn.textContent = q.opcions[i] ?? '';
         btn.className = 'boto boto--opcio';
         btn.disabled = false;
+        
+        // Assignar event listener directament
+        btn.onclick = () => {
+            import('./game.js').then(module => {
+                module.responder(i);
+            });
+        };
     });
 }
 
-// Import dinàmic per evitar dependència circular
 async function acabarJoc() {
     const { acabarJoc: finalitzarJoc } = await import('./results.js');
     finalitzarJoc();

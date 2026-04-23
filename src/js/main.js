@@ -4,11 +4,13 @@
 
 import { gameState } from './state.js';
 import { carregarPreguntes } from './questions.js';
-import { mostrarPantalla, initBenvinguda, setupEventListeners } from './ui.js';
+import { initDom, mostrarPantalla, initBenvinguda, setupEventListeners } from './ui.js';
 import { setupGameEvents } from './game.js';
 
-// Inicialitzar l'aplicació
 async function init() {
+    console.log('Inicialitzant joc...');
+    
+    initDom();
     const ok = await carregarPreguntes();
     if (!ok) {
         document.body.innerHTML = `
@@ -24,7 +26,8 @@ async function init() {
     initBenvinguda();
     setupEventListeners();
     setupGameEvents();
+    
+    console.log('Joc inicialitzat correctament');
 }
 
-// Iniciar quan el DOM estigui llest
 document.addEventListener('DOMContentLoaded', init);
