@@ -2,6 +2,7 @@
   "categories": {
     "pelicules_i_series": {
       "name": "Pel·lícules i Sèries",
+      "icon": "🎬",
       "questions": [
         { "id": 1, "pregunta": "Com es diu el ninot de fusta a qui li creix el nas quan menteix?", "opcions": ["Pinotxo", "Gepetto", "Pepe Grill", "Dumbo"], "correcta": 0, "explicacio": "Pinotxo és el protagonista del clàssic de Disney basat en el llibre de Carlo Collodi." },
         { "id": 2, "pregunta": "Quin personatge de Marvel porta un martell anomenat Mjölnir?", "opcions": ["Iron Man", "Hulk", "Thor", "Loki"], "correcta": 2, "explicacio": "Thor, el déu del tro, és l'únic capaç d'aixecar el seu martell màgic." },
@@ -40,6 +41,7 @@
     },
     "esport": {
       "name": "Esport",
+      "icon": "⚽",
       "questions": [
         { "id": 1, "pregunta": "Quants punts val un tir lliure en bàsquet?", "opcions": ["1", "2", "3", "0"], "correcta": 0, "explicacio": "Cada cistella de tir lliure suma un punt al marcador." },
         { "id": 2, "pregunta": "En quin esport s'utilitza una raqueta i una pilota groga?", "opcions": ["Ping-pong", "Tenis", "Bàdminton", "Golf"], "correcta": 1, "explicacio": "El tenis es juga amb pilotes grogues i raquetes en diverses superfícies." },
@@ -74,6 +76,84 @@
         { "id": 31, "pregunta": "En quin esport s'utilitza un arc i fletxes?", "opcions": ["Esgrima", "Tir amb arc", "Dards", "Caça"], "correcta": 1, "explicacio": "El tir amb arc és un esport de precisió que és olímpic des de fa molts anys." },
         { "id": 32, "pregunta": "Com es diu l'estadi del FC Barcelona?", "opcions": ["Bernabéu", "Camp Nou (Spotify Camp Nou)", "Metropolitano", "Mestalla"], "correcta": 1, "explicacio": "El Camp Nou és un dels estadis amb més capacitat del món." },
         { "id": 33, "pregunta": "Quants minuts dura un quart en un partit de bàsquet de la NBA?", "opcions": ["10", "12", "15", "20"], "correcta": 1, "explicacio": "A la NBA els quarts són de 12 minuts, a diferència dels 10 minuts de la FIBA." }
+      ]
+    },
+    "historia": {
+      "name": "Història",
+      "icon": "📜",
+      "questions": [
+        { "id": 1, "pregunta": "Quin any va arribar Cristòfor Colom a Amèrica?", "opcions": ["1492", "1498", "1502", "1510"], "correcta": 0, "explicacio": "Cristòfor Colom va arribar a Amèrica el 12 d'octubre de 1492." },
+        { "id": 2, "pregunta": "Qui va ser el primer president de la Generalitat de Catalunya?", "opcions": ["Josep Tarradellas", "Francesc Macià", "Lluís Companys", "Jordi Pujol"], "correcta": 1, "explicacio": "Francesc Macià va ser el primer president de la Generalitat restaurada el 1931." },
+        { "id": 3, "pregunta": "En quin any va acabar la Segona Guerra Mundial?", "opcions": ["1943", "1944", "1945", "1946"], "correcta": 2, "explicacio": "La Segona Guerra Mundial va acabar el 1945 amb la rendició d'Alemanya i el Japó." },
+        { "id": 4, "pregunta": "Quin emperador romà va construir un mur a Gran Bretanya?", "opcions": ["Hadrià", "August", "Neró", "Trajà"], "correcta": 0, "explicacio": "L'emperador Hadrià va ordenar la construcció del Mur d'Hadrià al segle II dC." },
+        { "id": 5, "pregunta": "Qui va pintar el 'Guernica'?", "opcions": ["Salvador Dalí", "Pablo Picasso", "Joan Miró", "Francisco de Goya"], "correcta": 1, "explicacio": "Picasso va pintar el Guernica el 1937 com a denúncia del bombardeig de la ciutat homònima." },
+        { "id": 6, "pregunta": "Quina va ser la primera civilització de la península Ibèrica?", "opcions": ["Romans", "Tartessos", "Fenicis", "Ibers"], "correcta": 1, "explicacio": "Tartessos és considerada la primera civilització de la península Ibèrica." },
+        { "id": 7, "pregunta": "Qui va ser l'últim emperador de l'Imperi Romà d'Occident?", "opcions": ["August", "Constantí", "Ròmul Augústul", "Julià"], "correcta": 2, "explicacio": "Ròmul Augústul va ser deposat el 476 dC, marcant la caiguda de l'Imperi Romà d'Occident." },
+        { "id": 8, "pregunta": "En quin any es va signar la Constitució Espanyola actual?", "opcions": ["1975", "1978", "1982", "1986"], "correcta": 1, "explicacio": "La Constitució Espanyola es va aprovar el 1978 després de la transició democràtica." },
+        { "id": 9, "pregunta": "Qui va ser conegut com 'El Libertador' a Amèrica del Sud?", "opcions": ["Simón Bolívar", "José de San Martín", "Bernardo O'Higgins", "Miguel Hidalgo"], "correcta": 0, "explicacio": "Simón Bolívar va liderar la independència de diversos països sud-americans." },
+        { "id": 10, "pregunta": "Quin va ser el primer home a trepitjar la Lluna?", "opcions": ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Michael Collins"], "correcta": 1, "explicacio": "Neil Armstrong va ser el primer humà a trepitjar la Lluna el 20 de juliol de 1969." },
+        { "id": 11, "pregunta": "Quina batalla va significar la derrota de Napoleó Bonaparte?", "opcions": ["Austerlitz", "Waterloo", "Traflagar", "Leipzig"], "correcta": 1, "explicacio": "Napoleó va ser derrotat definitivament a la batalla de Waterloo el 1815." },
+        { "id": 12, "pregunta": "Qui va ser el primer rei de la Corona d'Aragó?", "opcions": ["Ramon Berenguer IV", "Alfons I", "Pere II", "Jaume I"], "correcta": 0, "explicacio": "Ramon Berenguer IV va unificar el casal de Barcelona amb el regne d'Aragó." },
+        { "id": 13, "pregunta": "Quin va ser el primer imperi de la història?", "opcions": ["Imperi Romà", "Imperi Persa", "Imperi Accadi", "Imperi Egipci"], "correcta": 2, "explicacio": "L'Imperi Accadi, sota Sargon el Gran, va ser el primer imperi de la història al voltant del 2334 aC." },
+        { "id": 14, "pregunta": "Qui va cremar Roma mentre tocava la lira?", "opcions": ["Cèsar", "Neró", "Cal·lígula", "Tiberi"], "correcta": 1, "explicacio": "Neró va ser acusat d'incendiar Roma l'any 64 dC, tot i que ell va culpar els cristians." },
+        { "id": 15, "pregunta": "En quin any va caure l'Imperi Romà d'Occident?", "opcions": ["410 dC", "455 dC", "476 dC", "500 dC"], "correcta": 2, "explicacio": "L'any 476 dC, amb la deposició de Ròmul Augústul per Odoacre, es considera la caiguda de l'Imperi Romà d'Occident." },
+        { "id": 16, "pregunta": "Qui va ser el primer home a fer la volta al món?", "opcions": ["Cristòfor Colom", "Fernão de Magalhães", "Juan Sebastián Elcano", "Vasco da Gama"], "correcta": 2, "explicacio": "Tot i que Magalhães va iniciar l'expedició, Elcano va completar la primera volta al món el 1522." },
+        { "id": 17, "pregunta": "Quin va ser el nom del vaixell de Darwin per estudiar l'evolució?", "opcions": ["Beagle", "Endeavour", "Santa Maria", "Victory"], "correcta": 0, "explicacio": "Charles Darwin va viatjar al voltant del món al HMS Beagle entre 1831 i 1836." },
+        { "id": 18, "pregunta": "Qui va escriure 'El Príncep'?", "opcions": ["Thomas More", "Nicolau Maquiavel", "Erasme de Rotterdam", "Francesc Petrarca"], "correcta": 1, "explicacio": "Maquiavel va escriure 'El Príncep' al segle XVI com a manual per a governants." },
+        { "id": 19, "pregunta": "Quina va ser la primera civilització europea?", "opcions": ["Grega", "Romana", "Minoica", "Celta"], "correcta": 2, "explicacio": "La civilització minoica a Creta (2700-1450 aC) és considerada la primera civilització avançada d'Europa." },
+        { "id": 20, "pregunta": "Qui va ser conegut com el 'Rei Sol'?", "opcions": ["Lluís XIV", "Lluís XVI", "Carles I", "Felip II"], "correcta": 0, "explicacio": "Lluís XIV de França va regnar 72 anys i va simbolitzar l'absolutisme monàrquic." },
+        { "id": 21, "pregunta": "En quin any es va inventar la impremta?", "opcions": ["1400", "1440", "1455", "1500"], "correcta": 1, "explicacio": "Gutenberg va inventar la impremta de tipus mòbils cap al 1440, revolucionant la difusió del coneixement." },
+        { "id": 22, "pregunta": "Qui va ser la primera dona en guanyar un Premi Nobel?", "opcions": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Florence Nightingale"], "correcta": 0, "explicacio": "Marie Curie va guanyar el Nobel de Física el 1903 i després el de Química el 1911." },
+        { "id": 23, "pregunta": "Quin va ser l'últim faraó de l'antic Egipte?", "opcions": ["Ramsès II", "Cleòpatra VII", "Tutankamon", "Akhenaton"], "correcta": 1, "explicacio": "Cleòpatra VII va ser l'última faraó d'Egipte abans de la conquesta romana el 30 aC." },
+        { "id": 24, "pregunta": "Qui va descobrir la penicil·lina?", "opcions": ["Louis Pasteur", "Alexander Fleming", "Robert Koch", "Joseph Lister"], "correcta": 1, "explicacio": "Fleming va descobrir la penicil·lina el 1928, revolucionant la medicina." },
+        { "id": 25, "pregunta": "En quin any va començar la Primera Guerra Mundial?", "opcions": ["1912", "1914", "1916", "1918"], "correcta": 1, "explicacio": "La Primera Guerra Mundial va començar el 28 de juliol de 1914 després de l'assassinat de l'arxiduc Francesc Ferran." },
+        { "id": 26, "pregunta": "Qui va ser el primer president dels Estats Units?", "opcions": ["Thomas Jefferson", "John Adams", "George Washington", "Benjamin Franklin"], "correcta": 2, "explicacio": "George Washington va ser el primer president dels EUA, exercint de 1789 a 1797." },
+        { "id": 27, "pregunta": "Quin va ser l'imperi més extens de la història?", "opcions": ["Imperi Romà", "Imperi Mongol", "Imperi Britànic", "Imperi Rus"], "correcta": 2, "explicacio": "L'Imperi Britànic va arribar a cobrir el 25% de la superfície terrestre al seu moment màxim." },
+        { "id": 28, "pregunta": "Qui va pintar la Capella Sixtina?", "opcions": ["Leonardo da Vinci", "Rafael", "Miquel Àngel", "Donatello"], "correcta": 2, "explicacio": "Miquel Àngel va pintar el sostre de la Capella Sixtina entre 1508 i 1512." },
+        { "id": 29, "pregunta": "En quin any es va fundar la Unió Europea?", "opcions": ["1945", "1951", "1957", "1993"], "correcta": 3, "explicacio": "La Unió Europea es va fundar oficialment l'1 de novembre de 1993 amb el Tractat de Maastricht." },
+        { "id": 30, "pregunta": "Qui va ser l'últim tsar de Rússia?", "opcions": ["Pere el Gran", "Nicolau I", "Alexandre II", "Nicolau II"], "correcta": 3, "explicacio": "Nicolau II va ser executat amb la seva família el 1918 durant la Revolució Russa." },
+        { "id": 31, "pregunta": "Quina ciutat va ser la capital de l'Imperi Bizantí?", "opcions": ["Roma", "Constantinoble", "Atenes", "Alexandria"], "correcta": 1, "explicacio": "Constantinoble (actual Istanbul) va ser la capital de l'Imperi Bizantí durant més de 1.000 anys." },
+        { "id": 32, "pregunta": "Qui va ser el líder de la Revolució Cubana?", "opcions": ["Che Guevara", "Camilo Cienfuegos", "Fidel Castro", "Raúl Castro"], "correcta": 2, "explicacio": "Fidel Castro va liderar la Revolució Cubana que va triomfar l'1 de gener de 1959." },
+        { "id": 33, "pregunta": "En quin any va arribar l'home a la Lluna?", "opcions": ["1965", "1967", "1969", "1971"], "correcta": 2, "explicacio": "L'Apollo 11 va aterrar a la Lluna el 20 de juliol de 1969." }
+      ]
+    },
+    "ciencia": {
+      "name": "Ciència",
+      "icon": "🔬",
+      "questions": [
+        { "id": 1, "pregunta": "Quin és el planeta més gran del sistema solar?", "opcions": ["Saturn", "Júpiter", "Neptú", "Urà"], "correcta": 1, "explicacio": "Júpiter és el planeta més gran, amb una massa 2.5 vegades la suma dels altres planetes." },
+        { "id": 2, "pregunta": "Quin element químic té el símbol 'O'?", "opcions": ["Or", "Oligoelement", "Oxigen", "Osmosi"], "correcta": 2, "explicacio": "L'oxigen és l'element químic amb símbol O i nombre atòmic 8." },
+        { "id": 3, "pregunta": "Quina és la part del cos humà amb més osos?", "opcions": ["Columna", "Mà", "Peu", "Cran"], "correcta": 1, "explicacio": "La mà té 27 ossos, és la part amb més densitat òssia del cos." },
+        { "id": 4, "pregunta": "Quin científic va proposar la teoria de l'evolució?", "opcions": ["Isaac Newton", "Charles Darwin", "Albert Einstein", "Gregor Mendel"], "correcta": 1, "explicacio": "Darwin va publicar 'L'Origen de les Espècies' el 1859." },
+        { "id": 5, "pregunta": "A quina temperatura bull l'aigua a nivell del mar?", "opcions": ["80°C", "90°C", "100°C", "110°C"], "correcta": 2, "explicacio": "L'aigua bull a 100°C (212°F) a pressió atmosfèrica normal." },
+        { "id": 6, "pregunta": "Quin és l'òrgan més gran del cos humà?", "opcions": ["Cervell", "Cor", "Pell", "Fetge"], "correcta": 2, "explicacio": "La pell és l'òrgan més gran, amb uns 2 metres quadrats de superfície." },
+        { "id": 7, "pregunta": "Quin animal pot viure tant a l'aigua com a la terra?", "opcions": ["Cocodril", "Amfibi", "Tortuga", "Foca"], "correcta": 1, "explicacio": "Els amfibis (granotes, salamandres) viuen en ambdós medis." },
+        { "id": 8, "pregunta": "Quin és el metall més lleuger?", "opcions": ["Alumini", "Liti", "Magnesi", "Titani"], "correcta": 1, "explicacio": "El liti és el metall més lleuger, amb una densitat de 0,534 g/cm³." },
+        { "id": 9, "pregunta": "Quina és la fórmula química de l'aigua?", "opcions": ["CO2", "O2", "H2O", "NaCl"], "correcta": 2, "explicacio": "L'aigua és H2O: dues molècules d'hidrogen i una d'oxigen." },
+        { "id": 10, "pregunta": "Quin és el virus que va causar la pandèmia del 2020?", "opcions": ["Ebola", "SARS-CoV-2", "VIH", "Grip A"], "correcta": 1, "explicacio": "El SARS-CoV-2 és el virus responsable de la COVID-19, declarada pandèmia el març del 2020." },
+        { "id": 11, "pregunta": "Quin científic va formular la teoria de la relativitat?", "opcions": ["Isaac Newton", "Albert Einstein", "Stephen Hawking", "Niels Bohr"], "correcta": 1, "explicacio": "Einstein va publicar la teoria de la relativitat especial (1905) i general (1915)." },
+        { "id": 12, "pregunta": "Quin és el mamífer més gran del món?", "opcions": ["Elefant africà", "Balena blava", "Tauró balena", "Rorqual comú"], "correcta": 1, "explicacio": "La balena blava pot arribar a fer 30 metres de llarg i pesar 180 tones." },
+        { "id": 13, "pregunta": "Quina part de la cèl·lula conté l'ADN?", "opcions": ["Mitocondri", "Ribosoma", "Nucli", "Citoplasma"], "correcta": 2, "explicacio": "El nucli cel·lular conté el material genètic (ADN) a les cèl·lules eucariotes." },
+        { "id": 14, "pregunta": "Quin planeta és conegut com el 'planeta vermell'?", "opcions": ["Júpiter", "Mart", "Venus", "Mercuri"], "correcta": 1, "explicacio": "Mart té un color vermellós a causa de l'òxid de ferro (rovell) a la seva superfície." },
+        { "id": 15, "pregunta": "Quina vitamina produeix el cos humà amb el sol?", "opcions": ["Vitamina A", "Vitamina C", "Vitamina D", "Vitamina E"], "correcta": 2, "explicacio": "La vitamina D es sintetitza a la pell amb l'exposició als raigs ultraviolats del sol." },
+        { "id": 16, "pregunta": "Quin és l'os més llarg del cos humà?", "opcions": ["Fèmur", "Tíbia", "Húmer", "Peroné"], "correcta": 0, "explicacio": "El fèmur és l'os més llarg i fort del cos humà." },
+        { "id": 17, "pregunta": "Quin gas és el més abundant a l'atmosfera terrestre?", "opcions": ["Oxigen", "Dioxid de carboni", "Nitrogen", "Argó"], "correcta": 2, "explicacio": "El nitrogen representa aproximadament el 78% de l'atmosfera terrestre." },
+        { "id": 18, "pregunta": "Quin animal és conegut per canviar de color per camuflar-se?", "opcions": ["Cargol", "Camaleó", "Pop", "Llagosta"], "correcta": 1, "explicacio": "Els camaleons són famosos per la seva capacitat de canviar de color per camuflatge o comunicació." },
+        { "id": 19, "pregunta": "Quin és el punt de congelació de l'aigua a nivell del mar?", "opcions": ["-5°C", "0°C", "2°C", "4°C"], "correcta": 1, "explicacio": "L'aigua pura es congela a 0°C (32°F) a pressió atmosfèrica normal." },
+        { "id": 20, "pregunta": "Quina part del microbi té forma d'espiral?", "opcions": ["Coc", "Bacil", "Espiril·l", "Vibri"], "correcta": 2, "explicacio": "Els espirils (com el bacteri de la sífilis) tenen forma d'espiral o helicoïdal." },
+        { "id": 21, "pregunta": "Quin és el metall més conductor de l'electricitat?", "opcions": ["Coure", "Or", "Plata", "Alumini"], "correcta": 2, "explicacio": "La plata és el millor conductor elèctric, tot i que el coure és més utilitzat pel seu menor cost." },
+        { "id": 22, "pregunta": "Quin tipus d'energia es genera amb l'aigua en moviment?", "opcions": ["Eòlica", "Solar", "Hidràulica", "Nuclear"], "correcta": 2, "explicacio": "L'energia hidràulica aprofita l'aigua en moviment (rius, preses) per generar electricitat." },
+        { "id": 23, "pregunta": "Quin científic va descobrir la radioactivitat?", "opcions": ["Marie Curie", "Pierre Curie", "Henri Becquerel", "Ernest Rutherford"], "correcta": 2, "explicacio": "Becquerel va descobrir la radioactivitat el 1896, i els Curie la van anomenar així." },
+        { "id": 24, "pregunta": "Quin és l'òrgan que bombeja la sang?", "opcions": ["Cervell", "Cor", "Fetge", "Pulmons"], "correcta": 1, "explicacio": "El cor és la bomba muscular que fa circular la sang per tot el cos." },
+        { "id": 25, "pregunta": "Quin és el planeta amb els anells més visibles?", "opcions": ["Júpiter", "Urà", "Neptú", "Saturn"], "correcta": 3, "explicacio": "Saturn té els anells més grans i visibles del sistema solar, formats per gel i roca." },
+        { "id": 26, "pregunta": "Quin aliment conté més vitamina C?", "opcions": ["Taronja", "Kiwi", "Pebrot vermell", "Maduixa"], "correcta": 2, "explicacio": "El pebrot vermell conté aproximadament el triple de vitamina C que una taronja." },
+        { "id": 27, "pregunta": "Quin tipus de moviment fan els planetes al voltant del Sol?", "opcions": ["Rotació", "Traslació", "Oscil·lació", "Vibració"], "correcta": 1, "explicacio": "La translació és el moviment dels planetes al voltant del Sol." },
+        { "id": 28, "pregunta": "Quin és el mineral més dur que existeix?", "opcions": ["Rubí", "Safir", "Diamant", "Corindó"], "correcta": 2, "explicacio": "El diamant és el mineral més dur, amb un 10 a l'escala de Mohs." },
+        { "id": 29, "pregunta": "Quina part de l'ull humana regula la quantitat de llum que hi entra?", "opcions": ["Còrnia", "Iris", "Pupil·la", "Retina"], "correcta": 1, "explicacio": "L'iris és la part de l'ull que s'expandeix o contrau per controlar la llum." },
+        { "id": 30, "pregunta": "Quin és el país amb més biodiversitat del món?", "opcions": ["Indonèsia", "Colòmbia", "Brasil", "Perú"], "correcta": 2, "explicacio": "Brasil té la major biodiversitat gràcies a l'Amazones, amb milers d'espècies endèmiques." },
+        { "id": 31, "pregunta": "Quin tipus d'energia és la que emet el Sol?", "opcions": ["Nuclear", "Química", "Tèrmica", "Elèctrica"], "correcta": 0, "explicacio": "El Sol produeix energia mitjançant reaccions de fusió nuclear al seu nucli." },
+        { "id": 32, "pregunta": "Quin és el líquid més abundant a la Terra?", "opcions": ["Aigua dolça", "Aigua salada", "Petroli", "Magma"], "correcta": 1, "explicacio": "L'aigua salada dels oceans representa aproximadament el 97% de l'aigua de la Terra." },
+        { "id": 33, "pregunta": "Quin animal té tres cors?", "opcions": ["Pop", "Calamar", "Sípia", "Polp"], "correcta": 0, "explicacio": "Els pops tenen tres cors: dos bombejen sang a les brànquies i un al cos." }
       ]
     }
   }
