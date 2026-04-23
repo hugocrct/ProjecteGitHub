@@ -2,17 +2,17 @@
 
 /* ===== VARIABLES ===== */
 :root {
-    --color-primary:   #6366f1;
+    --color-primary:      #6366f1;
     --color-primary-dark: #4f46e5;
-    --color-secondary: #ec4899;
-    --color-success:   #10b981;
-    --color-danger:    #ef4444;
-    --color-text:      #1f2937;
-    --color-text-suau: #6b7280;
-    --color-bg-card:   #ffffff;
-    --radius-card:     20px;
-    --radius-boto:     12px;
-    --transicio:       0.3s ease;
+    --color-secondary:    #ec4899;
+    --color-success:      #10b981;
+    --color-danger:       #ef4444;
+    --color-text:         #1f2937;
+    --color-text-suau:    #6b7280;
+    --color-bg-card:      #ffffff;
+    --radius-card:        20px;
+    --radius-boto:        12px;
+    --transicio:          0.3s ease;
 }
 
 /* ===== RESET + BASE ===== */
@@ -35,7 +35,7 @@ body {
 /* ===== PANTALLES ===== */
 .pantalla {
     width: 100%;
-    max-width: 420px;
+    max-width: 460px;
 }
 
 .pantalla.amagada { display: none; }
@@ -121,7 +121,7 @@ h1, h2 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     cursor: pointer;
-    transition: background var(--transicio), transform var(--transicio);
+    transition: background var(--transicio), transform var(--transicio), border-color var(--transicio);
 }
 
 .boto:active {
@@ -141,6 +141,20 @@ h1, h2 {
     background: var(--color-primary-dark);
 }
 
+.boto--secundari {
+    background: #f3f4f6;
+    color: var(--color-text);
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.boto--secundari:hover {
+    background: #e5e7eb;
+}
+
 /* ===== CATEGORIES ===== */
 .gridCategories {
     display: grid;
@@ -158,14 +172,14 @@ h1, h2 {
     align-items: center;
     gap: 6px;
     border-radius: 14px;
+    border: 2px solid transparent;
 }
 
 .boto--categoria:hover {
     background: #ede9fe;
     color: var(--color-primary);
+    border-color: var(--color-primary);
 }
-
-/* TODO: afegir estat actiu quan es selecciona */
 
 .categoriaIcon { font-size: 2rem; }
 .categoriaNom  { font-size: 1rem; font-weight: 700; }
@@ -194,9 +208,19 @@ h1, h2 {
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 700;
+    transition: background var(--transicio), color var(--transicio);
 }
 
-/* TODO: afegir classe timer--urgent quan queden <10s */
+.timer--urgent {
+    background: #fee2e2;
+    color: var(--color-danger);
+    animation: pols 0.8s ease-in-out infinite;
+}
+
+@keyframes pols {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.08); }
+}
 
 /* ===== BARRA DE PROGRÉS ===== */
 .barraProgres {
@@ -211,7 +235,7 @@ h1, h2 {
     height: 100%;
     background: var(--color-primary);
     border-radius: 99px;
-    width: 10%; /* JS actualitzarà aquest valor */
+    width: 0%;
     transition: width 0.4s ease;
 }
 
@@ -228,6 +252,7 @@ h1, h2 {
     color: var(--color-text);
     line-height: 1.5;
     margin-bottom: 20px;
+    min-height: 60px;
 }
 
 /* ===== OPCIONS ===== */
@@ -246,25 +271,126 @@ h1, h2 {
     text-align: left;
     border: 2px solid #e5e7eb;
     line-height: 1.4;
+    transition: background var(--transicio), border-color var(--transicio), color var(--transicio);
 }
 
-.boto--opcio:hover {
+.boto--opcio:hover:not(:disabled) {
     border-color: var(--color-primary);
     background: #ede9fe;
 }
 
-/* TODO: classes .correcta i .incorrecta per feedback visual */
+.boto--opcio:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+/* Feedback visual per opcions */
+.boto--opcio.correcta {
+    background: #d1fae5;
+    border-color: var(--color-success);
+    color: #065f46;
+    font-weight: 700;
+}
+
+.boto--opcio.incorrecta {
+    background: #fee2e2;
+    border-color: var(--color-danger);
+    color: #991b1b;
+}
 
 /* ===== FEEDBACK ===== */
 .feedback {
     background: #f0fdf4;
     border-radius: var(--radius-boto);
-    padding: 14px;
+    padding: 14px 16px;
     margin-top: 8px;
     border-left: 4px solid var(--color-success);
 }
 
-/* TODO: variant .feedback--error amb border danger */
+.feedback--error {
+    background: #fff7ed;
+    border-left-color: var(--color-danger);
+}
+
+.feedback p {
+    font-size: 0.88rem;
+    color: var(--color-text);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.feedback .boto--primari {
+    padding: 10px;
+    font-size: 0.95rem;
+}
+
+/* ===== RESULTATS ===== */
+.targeta--resultats {
+    text-align: center;
+}
+
+.resultats-puntuacio {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    margin: 20px 0 24px;
+}
+
+.puntuacio-num {
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    line-height: 1;
+}
+
+.puntuacio-label {
+    font-size: 1.1rem;
+    color: var(--color-text-suau);
+    font-weight: 600;
+}
+
+.resultats-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.stat-item {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 14px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.stat--correct { background: #d1fae5; }
+.stat--wrong   { background: #fee2e2; }
+
+.stat-num {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--color-text);
+    line-height: 1;
+}
+
+.stat--correct .stat-num { color: #065f46; }
+.stat--wrong   .stat-num { color: #991b1b; }
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--color-text-suau);
+    font-weight: 600;
+}
+
+.resultats-botons {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
 
 /* ===== UTILS ===== */
 .amagat { display: none !important; }
@@ -272,6 +398,7 @@ h1, h2 {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 380px) {
     .targeta { padding: 28px 20px; }
-    .gridOpcions { grid-template-columns: 1fr; }
+    .gridOpcions    { grid-template-columns: 1fr; }
     .gridCategories { grid-template-columns: 1fr; }
+    .resultats-stats { grid-template-columns: 1fr; }
 }
