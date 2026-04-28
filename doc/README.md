@@ -58,7 +58,7 @@ Opció de jugar altra categoria o tornar a l'inici
 ProjecteGithub/
 ├── index.html              # HTML semàntic de les 4 pantalles
 ├── style.css               # CSS responsiu amb variables
-├── preguntes/
+├── data/
 │   └── questions.json      # Preguntes en format JSON (4 categories)
 ├── js/
 │   ├── main.js             # Punt d'entrada, inicialització
