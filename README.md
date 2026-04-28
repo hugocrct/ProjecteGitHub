@@ -2,8 +2,8 @@
 
 ## Descripció
 
-Joc de preguntes interactive amb sistema de puntuació, timer per pregunta i categories seleccionables.
-Implementat en HTML5, CSS3 i JavaScript vanilla (sense frameworks).
+Joc de preguntes interactiu amb sistema de puntuació, timer per pregunta i categories seleccionables.
+Implementat en HTML5, CSS3 i JavaScript modular (Vanilla JS, sense frameworks).
 
 **Projecte:** CFGS DAM - M010 UF1 Projecte Web & GitHub  
 **Data:** Abril 2026  
@@ -13,38 +13,41 @@ Implementat en HTML5, CSS3 i JavaScript vanilla (sense frameworks).
 
 ## 📋 Requisits del Joc
 
-### Features
+### Features Implementades
 - ✅ Pantalla d'inici amb entrada de nom
-- ✅ Selecció de categoria (Historia / Esport)
+- ✅ Selecció de categoria (4 categories disponibles)
 - ✅ Preguntes amb 4 opcions de resposta
 - ✅ Feedback visual (correcta/incorrecta)
 - ✅ Sistema de puntuació (10 punts per pregunta correcta)
 - ✅ Timer de compte enrere (30 segons per pregunta)
 - ✅ Indicador de progrés (X de N preguntes)
 - ✅ Pantalla de resultats amb estadístiques
-- ✅ Opció de tornar a jugar
+- ✅ Opció de tornar a jugar / canviar categoria
 - ✅ Design responsiu (mobile + desktop)
+- ✅ Codi JavaScript modular (6 fitxers separats)
 
 ### Categories
-1. **Historia** 📜 - Preguntes sobre historia universal i de Catalunya
-2. **Esport** ⚽ - Preguntes sobre esports diversos
+1. **Pel·lícules i Sèries** 🎬 - Preguntes sobre cinema i televisió (33 preguntes)
+2. **Esport** ⚽ - Preguntes sobre esports diversos (33 preguntes)
+3. **Història** 📜 - Preguntes sobre història universal i de Catalunya (33 preguntes)
+4. **Ciència** 🔬 - Preguntes sobre biologia, química i astronomia (33 preguntes)
 
 ---
 
 ## 🎯 Flux del Joc
 
 ```
-1. Pantalla d'inici
-   ↓
-2. Entrada de nom del jugador
-   ↓
-3. Selecció de categoria
-   ↓
-4. Joc de preguntes (amb timer)
-   ↓
-5. Pantalla de resultats
-   ↓
-6. Opció de tornar a jugar o sortir
+Pantalla d'inici
+↓
+Entrada de nom del jugador
+↓
+Selecció de categoria (4 opcions)
+↓
+Joc de preguntes (10 preguntes aleatòries amb timer de 30s)
+↓
+Pantalla de resultats (puntuació, estadístiques)
+↓
+Opció de jugar altra categoria o tornar a l'inici
 ```
 
 ---
@@ -52,19 +55,23 @@ Implementat en HTML5, CSS3 i JavaScript vanilla (sense frameworks).
 ## 📁 Estructura del Projecte
 
 ```
-joc-preguntes/
-├── index.html           # HTML semàntic de les 3 pantalles
-├── style.css            # CSS responsiu amb variables
-├── script.js            # JavaScript amb lógica del joc
-├── data/
-│   └── questions.json   # Preguntes en format JSON
-├── img/                 # (futur) imatges i icones
-├── docs/
-│   ├── mockup.html      # Mockup visual interactiu
-│   └── wireframes/      # (futur) wireframes del projecte
-├── README.md            # Aquesta documentació
-├── .gitignore           # Fitxers a ignorar en Git
-└── .git/                # Repositori Git
+ProjecteGithub/
+├── index.html              # HTML semàntic de les 4 pantalles
+├── style.css               # CSS responsiu amb variables
+├── preguntes/
+│   └── questions.json      # Preguntes en format JSON (4 categories)
+├── js/
+│   ├── main.js             # Punt d'entrada, inicialització
+│   ├── state.js            # Estat global i constants
+│   ├── ui.js               # Navegació entre pantalles i DOM
+│   ├── game.js             # Lògica del joc (timer, respostes)
+│   ├── questions.js        # Càrrega i gestió de preguntes
+│   └── results.js          # Pantalla de resultats
+└── docs/
+    ├── README.md           # Aquesta documentació
+    ├── .gitattributes      # Atributs en Git
+    └── .gitignore          # Fitxers a ignorar en Git
+
 ```
 
 ---
@@ -72,11 +79,11 @@ joc-preguntes/
 ## 🚀 Com Jugar
 
 1. **Entra el teu nom** a la pantalla inicial
-2. **Selecciona una categoria** (Historia o Esport)
+2. **Selecciona una categoria** (Pel·lícules, Esport, Història o Ciència)
 3. **Respon cada pregunta** dins del temps límit (30 segons)
 4. **Veu el feedback** si encertes o no
 5. **Passa a la següent pregunta** amb el botó
-6. **Veu els resultats finals** amb la puntuació total
+6. **Veu els resultats finals** amb la puntuació total i percentatge d'encert
 
 ---
 
@@ -86,22 +93,23 @@ joc-preguntes/
 - Wireframes del projecte ✅
 - Estructura HTML semàntica ✅
 - CSS responsiu i modern ✅
-- Estil visual (colors, tipografia, animacions)
+- Estil visual (colors, tipografia, animacions) ✅
 - Testing responsive
 
-### Hugo - Backend & Lógica JavaScript
+### Hugo - Backend & Lògica JavaScript
 - Estructura questions.json ✅
-- Lógica de categories
-- Lógica de puntuació
-- Sistema de timer
-- Funcions de validació
+- Lògica de categories ✅
+- Lògica de puntuació ✅
+- Sistema de timer ✅
+- Funcions de validació ✅
+- Modularització del codi JS ✅
 
 ### Anastasia - Frontend & Integració
 - Event listeners principals ✅
-- Navegació entre pantalles
-- Integració HTML + CSS + JS
-- Dinàmica de entrada de nom
-- Dinàmica de selecció de categoria
+- Navegació entre pantalles ✅
+- Integració HTML + CSS + JS ✅
+- Dinàmica d'entrada de nom ✅
+- Dinàmica de selecció de categoria ✅
 
 ---
 
@@ -111,8 +119,10 @@ joc-preguntes/
 - Un navegador web (Chrome, Firefox, Safari, Edge)
 - Git instalat
 - VSCode o editor de text
+- Servidor local (Live Server de VSCode) - Necessari per ES Modules
 
 ### Setup
+
 1. Clona el repositori:
    ```bash
    git clone https://github.com/[username]/joc-preguntes.git
@@ -124,16 +134,17 @@ joc-preguntes/
    code .
    ```
 
-3. Obre `index.html` en el navegador:
-   - Opció 1: Doble clic al fitxer `index.html`
-   - Opció 2: Usa Live Server extension (clic dret > Open with Live Server)
+3. Obre `index.html` amb Live Server:
+   - Clic dret a `index.html` > "Open with Live Server"
+   - O alternativament: Instala l'extensió "Live Server" i fes clic a "Go Live"
 
 ### Git Workflow
+
 ```bash
 # Crea la teva branca de feature
 git checkout -b feature/nom-funcionalitat
 
-# Fes els canvis i comprova-los localment
+# Fes els canvis i comprova'ls localment
 
 # Fes commit dels canvis
 git add .
@@ -150,32 +161,34 @@ git push -u origin feature/nom-funcionalitat
 
 ## 🔄 Convencions de Git
 
-### Tipos de Commits
+### Tipus de Commits
+
 ```
 [FEATURE] - Nova funcionalitat
 [BUGFIX]  - Correcció de bugs
-[REFACTOR] - Millora de codi existente
+[REFACTOR] - Millora de codi existent
 [DOCS]    - Documentació
 [STYLE]   - Canvis d'estil CSS
 ```
 
-### Exemplo
+### Exemple
+
 ```
 [FEATURE] Afegir timer de pregunta
 [BUGFIX] Corregir validació de nom
-[STYLE] Ajustar padding de botones
+[STYLE] Ajustar padding de botons
 ```
 
 ---
 
 ## 📊 Deadlines del Projecte
 
-| Data | Entrega | Estat |
-|------|---------|-------|
-| 13 abr | 1ª Entrega | ✅ Base estructura |
-| 20 abr | 2ª Entrega | 🔄 Funcionalitat completa |
-| 27 abr | 3ª Entrega | ⏳ Poliment |
-| 30 abr | Final | ⏳ Entrega definitiva |
+| Data   | Entrega          | Estat                         |
+|--------|------------------|-------------------------------|
+| 13 abr | 1ª Entrega       | ✅ Base estructura             |
+| 20 abr | 2ª Entrega       | ✅ Funcionalitat completa      |
+| 27 abr | 3ª Entrega       | 🔄 Modularització i poliment  |
+| 30 abr | Final            | ⏳ Entrega definitiva          |
 
 ---
 
@@ -188,32 +201,49 @@ git push -u origin feature/nom-funcionalitat
 - Accessible (labels, alt text, etc.)
 
 ### CSS
-- Variables CSS per colors i espaçament
+- Variables CSS per colors i espaiament
 - Mobile-first responsive design
 - Transicions suaus (0.3s ease)
-- Gradient de colors (6366f1 a 764ba2)
+- Gradient de colors (`6366f1` a `764ba2`)
 
-### JavaScript
-- OOP amb objecte `estadoJuego` per estat
+### JavaScript (Modular)
+6 fitxers separats per responsabilitat:
+
+| Fitxer | Funció | Exporta |
+|--------|--------|---------|
+| `state.js` | Estat global i constants | `gameState`, `constants` |
+| `ui.js` | DOM, navegació, validació | `dom`, `mostrarPantalla`, `validarNom`, `initBenvinguda`, `setupEventListeners` |
+| `questions.js` | Carregar preguntes, selecció categoria | `carregarPreguntes`, `initCategories`, `mostrarPregunta` |
+| `game.js` | Timer, respostes, feedback | `iniciarJoc`, `responder`, `tempsEsgotat`, `aturarTimer`, `setupGameEvents` |
+| `results.js` | Resultats finals | `acabarJoc`, `renderResultats` |
+| `main.js` | Inicialització | - |
+
+- Import/Export amb ES Modules
 - Funcions modulars (una per responsabilitat)
-- Comments explicatius
-- Console.log per debugging
 
 ### questions.json
-- Estructura clara amb categories
-- Cada pregunta té id, pregunta, opcions, correcta, explicacio
-- Fàcil d'expandir amb més preguntes
+4 categories completes:
+- Pel·lícules i Sèries: 33 preguntes
+- Esport: 33 preguntes
+- Història: 12 preguntes
+- Ciència: 8 preguntes
+
+Cada pregunta té: `id`, `pregunta`, `opcions`, `correcta`, `explicacio`
+
+Fàcil d'expandir amb més preguntes.
 
 ---
 
 ## 🎨 Paleta de Colors
 
-- **Primary:** `#6366f1` (Indigo modern)
-- **Secondary:** `#ec4899` (Pink accent)
-- **Success:** `#10b981` (Green)
-- **Danger:** `#ef4444` (Red)
-- **Dark:** `#1f2937` (Dark gray)
-- **Light:** `#f9fafb` (Light gray)
+| Nom | Hex | Ús |
+|-----|-----|----|
+| Primary | `#6366f1` | Indigo modern |
+| Secondary | `#ec4899` | Pink accent |
+| Success | `#10b981` | Green |
+| Danger | `#ef4444` | Red |
+| Dark | `#1f2937` | Dark gray |
+| Light | `#f9fafb` | Light gray |
 
 ---
 
@@ -230,18 +260,18 @@ git push -u origin feature/nom-funcionalitat
 
 - [Documentació de Git](https://git-scm.com/doc)
 - [MDN JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [CSS-Tricks](https://css-tricks.com/)
-- [GitHub Guides](https://guides.github.com/)
+- [CSS-Tricks](https://css-tricks.com)
+- [GitHub Guides](https://guides.github.com)
 
 ---
 
 ## 📞 Contacte
 
-- **Anastasia:** Frontend & Integració
-- **Hugo:** Backend & Lógica
-- **Paula:** UI/Design & HTML/CSS
+- **Anastasia** - Frontend & Integració
+- **Hugo** - Backend & Lògica
+- **Paula** - UI/Design & HTML/CSS
 
 ---
 
-**Última actualització:** 13 d'abril de 2026  
-**Status:** 🟡 En desenvolupament (Primera entrega)
+*Última actualització: 23 d'abril de 2026*  
+*Status: 🟢 En desenvolupament (Modularització completada)*
