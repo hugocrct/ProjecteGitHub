@@ -23,6 +23,7 @@
                     class="inputNom" 
                     placeholder="Escriu el teu nom..."
                     maxlength="20"
+                    autocomplete="off"
                 >
                 <p class="errorNom amagat" id="errorNom">⚠️ Entra un nom vàlid</p>
             </div>
@@ -41,27 +42,37 @@
             <p class="subTitol">Escull una categoria</p>
 
             <div class="gridCategories">
-                <button class="boto boto--categoria" data-categoria="historia">
-                    <span class="categoriaIcon">📜</span>
-                    <span class="categoriaNom">Història</span>
+                <button class="boto boto--categoria" data-categoria="cat-0">
+                    <span class="categoriaIcon">❓</span>
+                    <span class="categoriaNom">Categoria A</span>
                     <span class="categoriaDesc">10 preguntes</span>
                 </button>
-                <button class="boto boto--categoria" data-categoria="esport">
-                    <span class="categoriaIcon">⚽</span>
-                    <span class="categoriaNom">Esport</span>
+                <button class="boto boto--categoria" data-categoria="cat-1">
+                    <span class="categoriaIcon">❓</span>
+                    <span class="categoriaNom">Categoria B</span>
+                    <span class="categoriaDesc">10 preguntes</span>
+                </button>
+                <button class="boto boto--categoria" data-categoria="cat-2">
+                    <span class="categoriaIcon">❓</span>
+                    <span class="categoriaNom">Categoria C</span>
+                    <span class="categoriaDesc">10 preguntes</span>
+                </button>
+                <button class="boto boto--categoria" data-categoria="cat-3">
+                    <span class="categoriaIcon">❓</span>
+                    <span class="categoriaNom">Categoria D</span>
                     <span class="categoriaDesc">10 preguntes</span>
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- PANTALLA 3: Joc (TODO: Hugo implementa timer i lògica) -->
+    <!-- PANTALLA 3: Joc -->
     <section id="pantallaJoc" class="pantalla amagada">
         <div class="targeta targeta--joc">
 
             <!-- Capçalera del joc -->
             <div class="jocCapcalera">
-                <span class="jocCategoria" id="jocCategoria">Història</span>
+                <span class="jocCategoria" id="jocCategoria">Categoria</span>
                 <div class="timer" id="timer">
                     <span class="timerNumero" id="timerNumero">30</span>s
                 </div>
@@ -76,7 +87,7 @@
             <!-- Pregunta -->
             <p class="pregunta" id="textPregunta">La pregunta apareixerà aquí</p>
 
-            <!-- Opcions (TODO: Anastasia connecta amb JS) -->
+            <!-- Opcions -->
             <div class="gridOpcions" id="gridOpcions">
                 <button class="boto boto--opcio" data-index="0">Opció A</button>
                 <button class="boto boto--opcio" data-index="1">Opció B</button>
@@ -93,11 +104,10 @@
         </div>
     </section>
 
-    <!-- PANTALLA 4: Resultats (TODO) -->
+    <!-- PANTALLA 4: Resultats -->
     <section id="pantallaResultats" class="pantalla amagada">
-        <!-- pendent -->
     </section>
 
-    <script src="script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
